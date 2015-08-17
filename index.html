@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Kashav Madan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<title>kshvmdn</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 </head>
 <body>
-	kshvmdn
+	<div class="info">
+		<div class="h1">hey! i'm <span class="name">kashav</span>.</div class="h1">
+		<div class="role">
+			<span>cs student at <a href="http://web.cs.toronto.edu/" target="_blank" class="uoft">U of T</a></span> 
+			<span class="slashes">||</span> 
+			<span>co-founder at <a href="http://chapsule.com" target="_blank" class="chapsule">Chapsule</a></span>
+		</div>
+	</div>
+	<div class="social-links">
+		<a href="http://github.com/kshvmdn" target="_blank" class="social-link"><i class="fa fa-github-square"></i> /kshvmdn</a>
+		<a href="http://linkedin.com/in/kshvmdn" target="_blank" class="social-link"><i class="fa fa-linkedin-square"></i> /in/kshvmdn</a>
+		<a href="http://facebook.com/kashav.madan" target="_blank" class="social-link"><i class="fa fa-facebook-square"></i> /kashav.madan</a>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script>
+		$(function() {
+			var titles = ["","","",""]
+			var names = ['kashav', '@kshvmdn'];
+			var kshv = false;
+			$('.name').click(function() {
+				if (!kshv) $(this).html('@kshvmdn');
+				else $(this).html('kashav');
+				kshv = !kshv;
+			})
+		});
+	</script>
 </body>
 </html>

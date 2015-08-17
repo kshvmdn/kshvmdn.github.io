@@ -1,0 +1,103 @@
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+}
+body {
+	padding: 15px 20px;
+	font-family: 'Lato';
+}
+h2 {
+	font-weight: 300;
+}
+.info {
+	margin-bottom: 30px;
+}
+.h1 {
+	font-size: 4em;
+	font-weight: 800;
+	margin: 15px 0;
+}
+.name {
+	cursor: pointer;
+	border-bottom: 1px dashed #555;
+}
+	.name:hover {
+		border-bottom: 1px dashed #aaa;
+	}
+.role {
+	font-weight: 100;
+}
+.role span {
+	/*transition: font 0.8s ease-in-out;*/
+	font-size: 2.5em;
+}
+
+a { 
+	color: inherit; 
+	text-decoration: none;
+	transition:opacity 0.3s ease-in-out;
+}
+	a:hover {
+		opacity: 0.6;
+	}
+	a.uoft {
+		color:#002A5C;
+		font-family: 'EB Garamond';
+	}
+	a.chapsule {
+		color: #2185d0;
+		font-family: 'Dancing Script';
+	}
+
+.social-link {
+	margin: 10px 0;
+	font-weight: 400;
+	letter-spacing: 1.3px;
+	font-size: 1.5em;
+	display: block;
+	color: #111;
+}
+	.social-link .fa {
+		font-size: 3em;
+	}
+	.social-link .fa-facebook-square {
+		color: #3b5998;
+	}
+	.social-link .fa-linkedin-square {
+		color:#007bb6;
+	}
+	.social-link .fa-github-square {
+		color:#000;
+	}
+
+@media only screen and (max-width : 740px) {
+	.role span {
+		font-size: 2em;
+	}
+}
+@media only screen and (max-width : 600px) {
+	.role span {
+		display: block;
+		font-size: 2.4em;
+	}
+	.role span.slashes {
+		display: none;
+	}
+}
+@media only screen and (max-width: 490px) {
+	.h1 {
+		font-size: 3em;
+	}
+	.role span {
+		display: block;
+		font-size: 2em;
+	}
+	.role span.slashes {
+		display: none;
+	}
+}
