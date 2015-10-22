@@ -28,26 +28,29 @@ body:after { bottom: 0; }
 .header {
 	font-weight: 100;
 	font-size: 2.5em;
-	padding: 20px 0;
+	padding: 5px 0;
 }
 .header > .name {
 	cursor: pointer;
-	font-weight: 300;
+	font-weight: 500;
 }
 .content > p {
 	margin: 10px 0;
 	padding: 0;
 	font-size: 1.5em;
-	font-weight: 100;
+	font-weight: 200;
 }
 .content > p > a {
-	font-weight: 300;
+	font-weight: 400;
 	text-decoration: none;
 	opacity: 0.8;
-	transition:opacity 0.3s;
+	transition:0.2s ease-in-out;
 }
 .content > p > a:hover {
 	opacity: 1;
+}
+.content > p > span.sub_headi {
+	font-weight: 100;
 }
 .uoft {	color: #002A5C;	}
 .chapsule {	color: #2185d0;	}
