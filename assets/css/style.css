@@ -59,3 +59,18 @@ body:after { bottom: 0; }
 .email { color:#db4437; }
 .github { color: #999999; }
 .linkedin { color:#0077B5; }
+
+@media only screen and (max-width : 700px) {		
+	.container {		
+		padding: 60px 30px;
+	}		
+}
+
+@media only screen and (max-width : 540px) {		
+	.container {
+		padding: 60px 20px;
+	}
+	.content > p:not(p:first-child) {
+		font-size: 1.3em;
+	}	
+}
