@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "SF Display";
+    src: url("../fonts/SF-UI/SF-UI-Display-Regular.otf");
+    font-weight: 300
+}
+@font-face {
+    font-family: "SF Display";
+    src: url("../fonts/SF-UI/SF-UI-Display-Light.otf");
+    font-weight: 200
+}
+@font-face {
+    font-family: "SF Display";
+    src: url("../fonts/SF-UI/SF-UI-Display-Thin.otf");
+    font-weight: 100
+}
+@font-face {
+    font-family: "SF Display";
+    src: url("../fonts/SF-UI/SF-UI-Display-Semibold.otf");
+    font-weight: 500
+}
+@font-face {
+    font-family: "SF Display";
+    src: url("../fonts/SF-UI/SF-UI-Display-Medium.otf");
+    font-weight: 400
+}
