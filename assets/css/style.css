@@ -8,95 +8,51 @@
 	white-space: nowrap;
 }
 body {
-	padding: 15px 20px;
-	font-family: 'SF Display';
+	background-color: #F6F6F6;
+	font-family: "SF Display";
+	font-weight: 200;
 }
-h2 {
+body:before, body:after {
+	content: "";
+	position: fixed;
+	background: #404040;
+	left: 0;
+	right: 0;
+	height: 10px;
+}
+body:before { top: 0; }
+body:after { bottom: 0; }
+.container {
+	padding: 60px;	
+}
+.header {
+	font-weight: 100;
+	font-size: 2.5em;
+	padding: 20px 0;
+}
+.header > .name {
+	cursor: pointer;
 	font-weight: 300;
 }
-.info {
-	margin-bottom: 30px;
-}
-.h1 {
-	font-size: 4em;
-	font-weight: 800;
-	margin: 15px 0;
-}
-.name {
-	cursor: pointer;
-	border-bottom: 1px dashed #555;
-}
-	.name:hover {
-		border-bottom: 1px dashed #aaa;
-	}
-.role {
+.content > p {
+	margin: 10px 0;
+	padding: 0;
+	font-size: 1.5em;
 	font-weight: 100;
 }
-.role span {
-	/*transition: font 0.8s ease-in-out;*/
-	font-size: 2.5em;
-}
-
-a { 
-	color: inherit; 
+.content > p > a {
+	font-weight: 300;
 	text-decoration: none;
-	transition:opacity 0.3s ease-in-out;
+	opacity: 0.8;
+	transition:opacity 0.3s;
 }
-	a:hover {
-		opacity: 0.6;
-	}
-	a.uoft {
-		color:#002A5C;
-		font-family: 'EB Garamond';
-	}
-	a.chapsule {
-		color: #2185d0;
-		font-family: 'Dancing Script';
-	}
-
-.social-link {
-	margin: 10px 0;
-	font-weight: 400;
-	letter-spacing: 1.3px;
-	font-size: 1.5em;
-	color: #111;
+.content > p > a:hover {
+	opacity: 1;
 }
-	.social-link .fa {
-		font-size: 3em;
-	}
-	.social-link .fa-facebook-square {
-		color: #3b5998;
-	}
-	.social-link .fa-linkedin-square {
-		color:#007bb6;
-	}
-	.social-link .fa-github-square {
-		color:#000;
-	}
-
-@media only screen and (max-width : 740px) {
-	.role span {
-		font-size: 2em;
-	}
-}
-@media only screen and (max-width : 600px) {
-	.role span {
-		display: block;
-		font-size: 2.4em;
-	}
-	.role span.slashes {
-		display: none;
-	}
-}
-@media only screen and (max-width: 490px) {
-	.h1 {
-		font-size: 3em;
-	}
-	.role span {
-		display: block;
-		font-size: 2em;
-	}
-	.role span.slashes {
-		display: none;
-	}
-}
+.uoft {	color: #002A5C;	}
+.chapsule {	color: #2185d0;	}
+.fb { color: #3b5998; }
+.twtr { color:#55acee; }
+.email { color:#db4437; }
+.github { color: #999999; }
+.linkedin { color:#0077B5; }
