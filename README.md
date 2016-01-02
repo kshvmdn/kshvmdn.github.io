@@ -1,2 +1,2 @@
-# kshvmdn.me
-Personal website hosted at [kshvmdn.me](http://kshvmdn.me).
+# Personal website
+Personal portfolio hosted at [kshvmdn.me](http://kshvmdn.me).
