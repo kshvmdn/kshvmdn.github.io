@@ -30,17 +30,14 @@ body {
 a {
 	text-decoration: none;
 }
-
 .content {
 	margin: auto 40px;
 	font-size: 23px;
 }
-
 .content > div {
 	margin: 24px auto;
 	line-height: 31px;
 }
-
 .uoft {color: #FFE498;}
 .chapsule {color: #2185d0;}
 .twitter {color:#55acee;}
@@ -48,27 +45,22 @@ a {
 .github {color: #999999;}
 .linkedin {color:#0077B5;}
 .res {color:#F7922D;}
-
 a {
 	font-weight: bold;
 	transition: color 0.3s ease-in-out;
 }
-
 a:hover {
 	color: #fff;
 }
-
 .contact_trigger {
 	cursor: pointer;
 }
-
 .blink {
   animation: blinker 0.5s linear infinite;
 }
 @keyframes blinker {  
   50% { opacity: 0.0; }
 }
-
 @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
 	.hero {
 		font-size: 35px;
@@ -81,7 +73,6 @@ a:hover {
 		line-height: 35px;
 	}
 }
-
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
 	.hero {
 		font-size: 42px;
@@ -106,4 +97,3 @@ a:hover {
 		line-height: 35px;
 	}
 }
-

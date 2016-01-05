@@ -1,8 +1,5 @@
 $(function() {
-	words = ['develop', 'hack', 'design', 'write code', 'innovate', 'create', 'build']
-	$('.words').click(function() {
-		$(this).html(words[Math.floor(Math.random() * words.length)]);
-	});
+	setInterval(randomWord, 1500);
 	$('.contact_trigger').click(function(){
 		$('.contact').addClass('blink');
 		setTimeout(function(){
@@ -10,3 +7,8 @@ $(function() {
 		}, 1000);
 	});
 });
+
+function randomWord() {
+	words = ['develop', 'hack', 'design', 'write code', 'innovate', 'create', 'build']
+	$('.words').html(words[Math.floor(Math.random() * words.length)]);
+}
