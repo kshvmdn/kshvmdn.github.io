@@ -23,9 +23,18 @@ body {
 	overflow: hidden;
 	line-height: 20px;
 	text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+	opacity: 1.0;
+}
+.hero h3 {
+	opacity: 0.8;
+	font-weight: 400;
 }
 .hero .words {
-	cursor: pointer;
+	/*cursor: pointer;*/
+	opacity: 1.0;
+	text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+	/*font-style: italic;*/
+	font-weight: 700;
 }
 a {
 	text-decoration: none;
