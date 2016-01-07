@@ -1,8 +1,9 @@
 $(function() {
-
 	var $words = $('.hero .words');
 	var $underscore = $('.hero .underscore');
 	var $name = $('.hero .name');
+	var $contact = $('.contact');
+	var $contactTrigger = $('.contact_trigger');
 
 	var words = ['developer', 'hacker', 'designer', 'innovater', 'creator', 'maker', 'explorer', 'problem-solver', 'inventor', 'technology enthusiast', 'leader']
 	var underscore = '_';
@@ -15,13 +16,13 @@ $(function() {
 		setInterval(function() {
 			changeWord($words, words);
 			// flash($underscore, underscore);
-		}, 650);
+		}, 1000);
 	}, name.length * 301);
 
-	$('.contact_trigger').click(function(){
-		$('.contact').addClass('blink');
+	$contactTrigger.click(function(){
+		$contact.addClass('blink');
 		setTimeout(function(){
-			$('.contact').removeClass('blink');
+			$contact.removeClass('blink');
 		}, 1000);
 	});
 });
@@ -30,16 +31,12 @@ var changeWord = function(el, wordList) {
 	word = wordList[Math.floor(Math.random() * wordList.length)];
 	while (word == el.text())
 		word = wordList[Math.floor(Math.random() * wordList.length)];
-
-	if (['a', 'e', 'i', 'o', 'u'].indexOf(word[0].toLowerCase()) !== -1)
-		$('.a').html('an');
-	else
-		$('.a').html('a');
+	['a', 'e', 'i', 'o', 'u'].indexOf(word[0].toLowerCase()) !== -1 ? $('.a').text('an') : $('.a').text('a');
 	el.text(word);
 }
 
 var flash = function(el, text) {
-	el.text() != text ? el.html(text) : el.html('');
+	el.text() != text ? el.text(text) : el.text('');
 }
 
 var typeName = function(el, array, arrayPosition) {
