@@ -4,15 +4,16 @@ $(function() {
 	var $underscore = $('.hero .underscore');
 	var $name = $('.hero .name');
 
-	var words = ['developer', 'hacker', 'designer', 'innovater', 'creator', 'builder', 'technology enthusiast', 'leader']
+	var words = ['developer', 'hacker', 'designer', 'innovater', 'creator', 'maker', 'explorer', 'problem-solver', 'inventor', 'technology enthusiast', 'leader']
 	var underscore = '_';
 	var name = 'Kashav.'.split('');
 
+	changeWord($words, words);
 	typeName($name, 'Kashav.'.split(''), 0);
 
 	setTimeout(function() {
 		setInterval(function() {
-			$words.html(words[Math.floor(Math.random() * words.length)]);
+			changeWord($words, words);
 			// flash($underscore, underscore);
 		}, 650);
 	}, name.length * 301);
@@ -24,6 +25,18 @@ $(function() {
 		}, 1000);
 	});
 });
+
+var changeWord = function(el, wordList) {
+	word = wordList[Math.floor(Math.random() * wordList.length)];
+	while (word == el.text())
+		word = wordList[Math.floor(Math.random() * wordList.length)];
+
+	if (['a', 'e', 'i', 'o', 'u'].indexOf(word[0].toLowerCase()) !== -1)
+		$('.a').html('an');
+	else
+		$('.a').html('a');
+	el.text(word);
+}
 
 var flash = function(el, text) {
 	el.text() != text ? el.html(text) : el.html('');
