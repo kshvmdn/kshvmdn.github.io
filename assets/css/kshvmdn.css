@@ -1,3 +1,13 @@
+* {
+	transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-ms-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
+	margin: 0;
+	padding: 0
+}
+
 html {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -6,103 +16,156 @@ html {
 	-ms-user-select: none;
 	user-select: none;
 }
+
 body {
-	font-family: "Asap", Tahoma, Verdana, sans-serif;
-	background-image: url("../img/pattern.png");
-	color: #fff;
-}
-.container {
 	width: 100%;
+	font-family: "Quicksand";
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	overflow-x: hidden;
+	color: #ecf0f1;
+	background-color: #111;
 }
-.hero {
-	font-size: 28px;
+
+section {
+	padding: 40px 0
+}
+
+.highlight {
+	color: #9b59b6;
 	font-weight: 700;
-	padding: 40px;
-	padding-bottom: 10px;
-	margin: 30px 0;
-	overflow: hidden;
-	line-height: 20px;
-	text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
-	opacity: 1.0;
 }
+
+.hero {
+	padding-left: 40px;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 0.3em !important;
+	color: #bdc3c7;
+	background-color: #fff;
+	background-image: url("../img/pattern.png");
+}
+
+.hero h4 {
+	margin: 0;
+	padding: 0;
+}
+
+.hero h1 {
+	font-size: 55px;
+	margin: 0 auto;
+	color: #ecf0f1;
+}
+
 .hero h3 {
-	opacity: 0.8;
+	letter-spacing: 1.2px;
+	font-weight: 400;
+	margin-right: 15%;
+	margin-top: 20px;
+}
+
+.hero a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 700;
+}
+
+.projects {
+	padding-left: 40px;
+	width: 100%;
+	color: #666;
+	background: #fff;
+}
+
+.projects .heading h2 {
+	font-size: 28px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.projects .heading .small {
+	font-size: 16px;
+	color: #aaa;
+	font-weight: 300;
+}
+
+.projects .heading .small a {
+	text-decoration: none;
+	color: inherit;
 	font-weight: 400;
 }
-.hero .words {
-	/*cursor: pointer;*/
-	opacity: 1.0;
-	text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
-	/*font-style: italic;*/
-	font-weight: 700;
-}
-a {
-	text-decoration: none;
-}
-.content {
-	margin: auto 40px;
-	font-size: 23px;
-}
-.content > div {
-	margin: 24px auto;
-	line-height: 31px;
-}
-.uoft {color: #FFE498;}
-.chapsule {color: #2185d0;}
-.twitter {color:#55acee;}
-.email {color:#db4437;}
-.github {color: #999999;}
-.linkedin {color:#0077B5;}
-.res {color:#F7922D;}
-a {
-	font-weight: bold;
-	transition: color 0.3s ease-in-out;
-}
-a:hover {
-	color: #fff;
-}
-.contact_trigger {
+
+.projects .project {
+	font-size: 18px;
+	margin: 30px auto;
+	margin-right: 15%;
 	cursor: pointer;
+	color: #95a5a6;
+	padding: 5px 0;
 }
-.blink {
-  animation: blinker 0.5s linear infinite;
+
+.projects .project:hover {
+	padding-left: 10px;
+	border-left: 3px solid #eee;
 }
-@keyframes blinker {  
-  50% { opacity: 0.0; }
+
+.projects .title {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 20px;
+	color: #555;
 }
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-	.hero {
-		font-size: 35px;
-	}
-	.content {
-		font-size: 25px;
-	}
-	.content > div {
-		margin: 35px auto;
-		line-height: 35px;
-	}
+
+.projects .project a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 700;
+	border-bottom: 1px solid #fff;
 }
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-	.hero {
-		font-size: 42px;
-	}
-	.content {
-		font-size: 26px;
-	}
-	.content > div {
-		margin: 40px auto;
-		line-height: 35px
-	}
+
+.projects .project a:hover {
+	border-bottom: 1px solid #ccc;
 }
-@media only screen and (min-width: 1281px) {
-	.hero {
-		font-size: 50px;
-	}
-	.content {
-		font-size: 30px;
-	}
-	.content > div {
-		margin: 43px auto;
-		line-height: 35px;
-	}
+
+.footer {
+	background: #111;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	padding-bottom: 40px;
+}
+
+.footer .social-icons {
+	width: 80%;
+	margin: auto;
+}
+
+.footer .social-icons a {
+	padding: 20px;
+	position: relative;
+	display: inline-block;
+	transition: all 0.4s cubic-bezier(0.42, -0.76, 0.48, 1.64);
+	-webkit-transition: all 0.4s cubic-bezier(0.42, -0.76, 0.48, 1.64);
+	-moz-transition: all 0.4s cubic-bezier(0.42, -0.76, 0.48, 1.64);
+	-ms-transition: all 0.4s cubic-bezier(0.42, -0.76, 0.48, 1.64);
+	-o-transition: all 0.4s cubic-bezier(0.42, -0.76, 0.48, 1.64);
+	top: 0;
+}
+
+.footer .social-icons a:hover {
+	top: -10px;
+}
+
+.footer a {
+	color: inherit;
+}
+
+.footer .contact a {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.footer .contact a:hover {
+	border-bottom: 1px solid #ccc;
 }

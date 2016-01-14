@@ -3,7 +3,7 @@
 <head>
 	<title>Kashav Madan</title>
 
-	<meta name="description" content="Kashav Madan, web developer and computer science student. I enjoy using technology to solve problems." />
+	<meta name="description" content="Kashav Madan - web developer and computer science student. I enjoy using technology to solve problems." />
 	<meta name="keywords" content="kshvmdn, kashav madan, uoft, web developer, software engineer, python, php, javascript, css, html" />
 	<meta name="creator" content="Kashav Madan, @kshvmdn" />
 	<meta name="language" content="en-us" />
@@ -12,8 +12,8 @@
 
 	<link rel="stylesheet" href="assets/css/kshvmdn.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/normalize.css">
-	<!-- <link href='https://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic|Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'> -->
-	<link href='https://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,300,700" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
@@ -32,24 +32,71 @@
 </head>
 <body>
 	<div class="container">
-		<div class="hero">
-			<h1>Hey, I'm <span class="name"></span><span class="underscore"></span></h1>
-			<h3>I'm <span class="a">a</span> <span class="words">developer</span>.</h3>
-		</div>
-		<div class="content">
-			<div class="me">
-				I'm currently attending the <a href="http://web.cs.toronto.edu/" class="uoft">University of Toronto</a>, where I'm specializing in <strong>computer science</strong>. I'm also doing some <i>pretty</i> cool stuff with <a href="http://chapsule.com" class="chapsule">Chapsule</a>  &mdash; <span class="contact_trigger">get in touch</span> if you're interested!
+		<section class="hero">
+			<h4>Hi I'm</h4>
+			<h1>Kashav</h1>
+			<h3>I'm passionate about writing <span class="highlight">intuitive</span> code and designing <span class="highlight">beautiful</span> experiences.</h3>
+			<h3>I'm currently studying <span class="highlight">computer science</span> at the <a target="_blank" href="http://utoronto.ca">University of Toronto</a> and <span class="highlight">co-operating</span> <a target="_blank" href="http://chapsule.com">Chapsule</a>, a startup focused on engaging audiences at group events.</h3>
+		</section>
+		<section class="projects">
+			<div class="heading"><h2>Featured Projects</h2> <span class="small">Find more on <a target="_blank" href="http://github.com/kshvmdn?tab=repositories">GitHub</a>.</span></div>
+			<div class="project" data-href="http://github.com/kshvmdn/latestvid">
+				<div class="title">LatestVid</div>
+				<div class="description">
+					<p>A <span class="highlight">Node</span> command line tool that opens the latest video for any YouTube account. Received <span class="highlight">over 350 downloads</span> in the first week on <a target="_blank" href="http://npmjs.org/package/latestvid">npm</a>.</p>
+				</div>
 			</div>
-			<div class="work">
-				You'll usually find me working with JS, Python, or <span title='ya, i know ;-;'>PHP</span>. I strive to build things that are <strong>fast</strong>, <strong>beautiful</strong>, and <strong>intuitive</strong>. Most of my projects are on <a href="http://github.com/kshvmdn" class="github">GitHub</a> &mdash; check them out, you might find something interesting! 
+			<div class="project" data-href="http://github.com/kshvmdn/border-times">
+				<div class="title">Border Times</div>
+				<div class="description">
+					<p>A <span class="highlight">web API</span> for Canadian border wait times when entering the States. Built with <span class="highlight">Flask</span> on <span class="highlight">Python</span>.</p>
+				</div>
 			</div>
-			<div class="resume">
-				Here's a copy of my <a href="assets/pdf/resume.pdf" class="res">résumé</a> &mdash; it's a work in progress, <span class="contact_trigger">let me know</span> if you have any suggestions.
+			<div class="project" data-href="http://github.com/kshvmdn/twitter-birthday-responder">
+				<div class="title">Twitter Birthday Responder</div>
+				<div class="description">
+					<p>A <span class="highlight">Python</span> tool to respond to all <span class="highlight">birthday-related</span> mentions with a <span class="highlight">custom message</span>.</p>
+				</div>
+			</div>
+			<div class="project" data-href="http://github.com/kshvmdn/meme-me">
+				<div class="title">MemeME</div>
+				<div class="description">
+					<p>A <span class="highlight">command line tool</span> that opens a random meme via Reddit. Received <span class="highlight">over 60 downloads</span> in the first day on <a target="_blank" href="http://npmjs.org/package/meme-me">npm</a>.</p>
+				</div>
+			</div>
+			<div class="project" data-href="http://github.com/kshvmdn/toronto-bike-stations">
+				<div class="title">Toronto Bike Stations</div>
+				<div class="description">
+					<p>A <span class="highlight">map-based implementation</span> of Toronto Bike Share open data. Made with <span class="highlight">Express</span> and <span class="highlight">Google Maps API</span>.</p>
+				</div>
+			</div>
+			<div class="project" data-href="http://github.com/kshvmdn/nba-scores">
+				<div class="title">NBAScores</div>
+				<div class="description">
+					<p>A <span class="highlight">Python CLI</span> for viewing <span class="highlight">live NBA updates</span> from any date, including <i>today</i>.</p>
+				</div>
+			</div>
+		</section>
+		<section class="footer">
+			<div class="social-icons">
+				<a target="_blank" href="http://github.com/kshvmdn" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
+				<a target="_blank" href="https://www.linkedin.com/in/kshvmdn" title="LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
+				<a target="_blank" href="https://www.twitter.com/kshvmdn/" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+				<a target="_blank" href="https://www.facebook.com/kashav.madan" title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
+				<a target="_blank" href="assets/pdf/resume.pdf" title="Résumé"><i class="fa fa-fw fa-files-o"></i></a>
 			</div>
 			<div class="contact">
+<<<<<<< Updated upstream
 				Want to work together <i>or just chat</i>? <a href="mailto:kshvmdn@gmail.com" class="email">Email</a> me or find me on <a href="http://twitter.com/kshvmdn" class="twitter">Twitter</a>/<a href="http://linkedin.com/in/kshvmdn" class="linkedin">LinkedIn</a>.
+=======
+<<<<<<< HEAD
+				<p><a href="mailto:kshvmdn@gmail.com"><strong>kshvmdn</strong>@gmail.com</a> | <a href="tel:2892339850">(289) 233 9850</a></p>
+=======
+				Want to work together <i>or just chat</i>? <a href="mailto:kshvmdn@gmail.com" class="email">Email</a> me or find me on <a href="http://twitter.com/kshvmdn" class="twitter">Twitter</a>/<a href="http://linkedin.com/in/kshvmdn" class="linkedin">LinkedIn</a>.
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 			</div>
-		</div>
+		</section>
 	</div>
 </body>
 </html>
