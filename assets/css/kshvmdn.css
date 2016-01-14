@@ -32,7 +32,12 @@ section {
 	padding: 40px 0
 }
 
-.highlight {
+.highlight-dark {
+	color: #8e44ad;
+	font-weight: 700;
+}
+
+.highlight-light {
 	color: #9b59b6;
 	font-weight: 700;
 }
