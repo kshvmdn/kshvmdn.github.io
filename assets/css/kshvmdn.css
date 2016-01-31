@@ -68,6 +68,7 @@ section {
 	font-weight: 400;
 	margin-right: 15%;
 	margin-top: 20px;
+	text-transform: none;
 }
 
 .hero a {
