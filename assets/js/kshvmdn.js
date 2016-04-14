@@ -1,7 +1,6 @@
-'use strict';
-$(() => {
-  $.getJSON('./projects.json', result => {
-    let html = new EJS({url: './assets/templates/projects.ejs'}).render({projects: result});
+$(function() {
+  $.getJSON('./projects.json', function(result) {
+    var html = new EJS({url: './assets/templates/projects.ejs'}).render({projects: result});
     $('.projects')
       .append(html)
       .on('click', '.project .title', function() {
