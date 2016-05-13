@@ -11,7 +11,7 @@
   },
   {
     "name": "UofT Exams",
-    "description": "A command line tool for UofT students to retrieve a list of exams based on various parameters including courses, lecture sections and last names."
+    "description": "A command line tool for UofT students to retrieve a list of exams based on various parameters including courses, lecture sections and last names.",
     "url": "http://github.com/kshvmdn/uoft-exams"
   },
   {
