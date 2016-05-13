@@ -10,6 +10,11 @@
     "url": "http://github.com/kshvmdn/nba-games"
   },
   {
+    "name": "UofT Exams",
+    "description": "A command line tool for UofT students to retrieve a list of exams based on various parameters including courses, lecture sections and last names."
+    "url": "http://github.com/kshvmdn/uoft-exams"
+  },
+  {
     "name": "NextRide API",
     "description": "A real-time <span class='highlight light'>scraper</span> and <span class='highlight light'>API</span> for the Brampton Transit NextRide service.",
     "url": "http://github.com/kshvmdn/next-ride-api"
