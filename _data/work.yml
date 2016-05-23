@@ -28,7 +28,8 @@
 - name: Chapsule
   role: Project Manager & Developer
   description:
-    - Manage core technical projects (i.e. web platform and progressive mobile application)
+    - Web and mobile applications for sharing and collecting photos, videos, and recordings at events
+    - Manage core technical projects (i.e. web platform and progressive mobile app)
     - Develop & maintain various components, including custom routing architecture and internal RESTful API
   technology:
     - PHP (Vanilla)
