@@ -1,0 +1,55 @@
+---
+- name: Treasury Board Secretariat
+  sub_name: Enterprise Application Division
+  role: Junior Web Developer
+  description:
+    - Contribute to internal communications platform used by all members of the Ontario Public Service
+    - WordPress plugin and frontend development
+    - E2E tests for accessiblity and usability
+  technology:
+    - PHP (WordPress/Slim)
+    - JavaScript (jQuery/Node.js/Angular)
+    - Git
+  url: https://www.ontario.ca/page/treasury-board-secretariat/
+  start: May 2016
+
+- name: AppMastery
+  role: Junior Software Developer
+  description:
+    - SmartTV applications for hosting and streaming video content
+    - Frontend development with various web technologies like JavaScript/HTML5/CSS3
+  technology:
+    - JavaScript
+    - HTML5/CSS3
+    - Git
+  url: http://appmastery.co/
+  start: May 2016
+
+- name: Chapsule
+  role: Project Manager & Developer
+  description:
+    - Manage core technical projects (i.e. web platform and progressive mobile application)
+    - Develop & maintain various components, including custom routing architecture and internal RESTful API
+  technology:
+    - PHP (Vanilla)
+    - JavaScript (jQuery/Node.js)
+    - HTML5/CSS3
+    - Git
+    - Photoshop
+  url: http://chapsule.com/
+  start: March 2015
+
+- name: EYVCanada
+  role: Technical Lead
+  description:
+    - Revamped WordPress website with customized design PHP templating
+    - Ensured technical requirements were met at bimonthly seminars and sessions
+  technology:
+    - PHP (WordPress)
+    - JavaScript
+    - HTML5/CSS3
+    - Photoshop
+  url: http://eyvcanada.com
+  start: May 2015
+  end: November 2015
+---

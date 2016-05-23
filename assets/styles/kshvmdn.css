@@ -74,6 +74,14 @@ section {
     color: #ECF0F1;
 }
 
+.hero h2 {
+    font-size: 28px;
+}
+
+.hero h2 .kshvmdn:hover {
+    color: #ECF0F1;
+}
+
 .hero h3 {
     font-weight: 400;
 
@@ -108,19 +116,14 @@ section {
     margin-right: 5px;
 }
 
-.projects .heading .small {
-    font-size: 16px;
-    font-weight: 300;
-
-    color: #7D7D7D;
-}
-
-.projects .heading .small a {
-    font-weight: 400;
-
+.projects .heading a {
     text-decoration: none;
 
     color: inherit;
+}
+
+.projects .heading a:hover {
+    color: #DDD;
 }
 
 .projects .project {
@@ -131,6 +134,7 @@ section {
     padding: 5px 0;
 
     color: #6C7778;
+    border-left: 3px solid #FFF;
 }
 
 .projects .project:hover {
@@ -150,7 +154,17 @@ section {
     color: #555;
 }
 
-.projects .project a {
+.projects .title:hover {
+    color: #222;
+}
+
+.projects .title a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.projects .project .description a {
     font-weight: 700;
 
     text-decoration: none;
@@ -159,8 +173,114 @@ section {
     border-bottom: 1px solid #FFF;
 }
 
-.projects .project a:hover {
+.projects .project .description a:hover {
     border-bottom: 1px solid #CCC;
+}
+
+.work {
+    width: 100%;
+    padding-left: 40px;
+
+    color: #666;
+    background: #FFF;
+}
+
+.work .heading h2 {
+    font-size: 28px;
+
+    display: inline-block;
+
+    margin-right: 5px;
+}
+
+.work .heading a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.work .heading a:hover {
+    color: #DDD;
+}
+
+.work .workplace {
+    font-size: 18px;
+
+    margin: 30px auto;
+    margin-right: 15%;
+    padding: 5px 0;
+
+    color: #6C7778;
+}
+
+.work .workplace .name .main {
+    font-size: 22px;
+    font-weight: 400;
+
+    display: inline;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+.work .workplace .name .main:hover {
+    color: #222;
+}
+
+.work .workplace .name .main a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.work .workplace .name .secondary {
+    font-size: 20px;
+
+    display: inline;
+
+    opacity: .7;
+}
+
+.work .workplace .meta .role {
+    text-transform: uppercase;
+}
+
+.work .workplace .meta .description ul {
+    line-height: 2;
+
+    margin: 15px auto;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.work .workplace .meta .description ul li {
+    padding-left: 0;
+
+    border-left: 3px solid #FFF;
+}
+
+.work .workplace:hover > .meta .description ul li {
+    padding-left: 10px;
+
+    border-left: 3px solid #EEE;
+}
+
+.work .workplace .meta ul li:not(:last-child) {
+    border-bottom: 1px solid #EEE;
+}
+
+.work .workplace .meta .duration {
+    font-size: 20px;
+
+    opacity: .7;
+}
+
+.divider {
+    padding: 15px 0;
+
+    background-color: #ECF0F1;
 }
 
 .footer {
@@ -209,4 +329,20 @@ section {
 
 .footer .contact a:hover {
     border-bottom: 1px solid #CCC;
+}
+
+@media (max-width: 670px) {
+    .hero,
+    .projects,
+    .work {
+        padding-left: 20px;
+    }
+
+    .work .workplace .meta .description ul li {
+        font-size: 16px;
+
+        padding-left: 0;
+
+        border-left: none;
+    }
 }
