@@ -1,5 +1,1 @@
-$(function() {
-  $('.projects').on('click', '.project .title', function() {
-    window.open($(this).parent().attr('data-href'));
-  });
-});
+console.log('http://github.com/kshvmdn');
