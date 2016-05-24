@@ -30,7 +30,8 @@ body {
     margin: 0;
 
     color: #ECF0F1;
-    background-color: #111;
+    background-color: #FFF;
+    background-image: url('../images/pattern.png');
 }
 
 section {
@@ -50,15 +51,14 @@ section {
 }
 
 .hero {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     padding-left: 40px;
 
     letter-spacing: .3em !important;
     text-transform: uppercase;
 
     color: #BDC3C7;
-    background-color: #FFF;
-    background-image: url('../images/pattern.png');
 }
 
 .hero h4 {
@@ -101,7 +101,8 @@ section {
 }
 
 .projects {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     padding-left: 40px;
 
     color: #666;
@@ -178,7 +179,8 @@ section {
 }
 
 .work {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     padding-left: 40px;
 
     color: #666;
@@ -278,9 +280,7 @@ section {
 }
 
 .divider {
-    padding: 15px 0;
-
-    background-color: #ECF0F1;
+    padding: 40px 0;
 }
 
 .footer {
@@ -290,7 +290,6 @@ section {
     text-align: center;
 
     color: #FFF;
-    background: #111;
 }
 
 .footer .social-icons {
@@ -335,6 +334,7 @@ section {
     .hero,
     .projects,
     .work {
+        width: 100%;
         padding-left: 20px;
     }
 
