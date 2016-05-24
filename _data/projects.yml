@@ -1,4 +1,12 @@
 ---
+- name: BorderTimes
+  description: A web API for <span class='highlight light'>real-time</span> Canadian border times.
+  url: https://github.com/kshvmdn/border-times
+
+- name: Facebot
+  description: A Facebook Messenger bot with <span class='highlight light'>SMS</span> and <span class='highlight light'>Twitter</span> integration. Built at UofTHacks 2016.
+  url: https://github.com/kshvmdn/facebot
+
 - name: LatestVid
   description: <span class='highlight light'>Open</span> or <span class='highlight light'>download</span> the latest video for any YouTube account.
   url: http://github.com/kshvmdn/latestvid
@@ -6,10 +14,6 @@
 - name: NBA Games
   description: View <span class='highlight light'>NBA</span> scores in your command line.
   url: http://github.com/kshvmdn/nba-games
-
-- name: UofT Exams
-  description: A command line tool for UofT students to retrieve a list of exams based on various parameters including courses, lecture sections and last names.
-  url: http://github.com/kshvmdn/uoft-exams
 
 - name: NextRide API
   description: A <span class='highlight light'>scraper</span> and real-time web <span class='highlight light'>API</span> for the Brampton Transit NextRide service.
@@ -34,6 +38,10 @@
 - name: Tweetbot
   description: Automatically reply to all mentions that contain a specific phrase on <span class='highlight light'>Twitter</span>.
   url: http://github.com/kshvmdn/tweetbot
+
+- name: UofT Exams
+  description: A command line tool for UofT students to retrieve a list of exams based on various parameters including courses, lecture sections and last names.
+  url: http://github.com/kshvmdn/uoft-exams
 
 - name: WikiArticles
   description: An <span class='highlight light'>aggregator</span> for reading and saving random articles from Wikipedia.

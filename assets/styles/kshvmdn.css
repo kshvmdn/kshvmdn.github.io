@@ -345,4 +345,8 @@ section {
 
         border-left: none;
     }
+
+    .divider {
+        padding: 20px 0;
+    }
 }
