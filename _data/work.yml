@@ -3,7 +3,7 @@
   sub_name: Enterprise Application Division
   role: Junior Web Developer
   description:
-    - Contribute to internal communications platform used by all members of the Ontario Public Service
+    - Contribute to internal communications platform used by members of the Ontario Public Service
     - WordPress plugin and frontend development
     - E2E tests for accessiblity and usability
   technology:
@@ -16,8 +16,8 @@
 - name: AppMastery
   role: Junior Software Developer
   description:
-    - SmartTV applications for hosting and streaming video content
-    - Frontend development with modern web technologies
+    - Build SmartTV applications for hosting and streaming video content
+    - Frontend development using modern web technologies
   technology:
     - JavaScript
     - HTML5/CSS3
@@ -30,7 +30,7 @@
   description:
     - Web and mobile applications for sharing and collecting photos, videos, and recordings at events
     - Manage core technical projects (i.e. web platform and progressive mobile app)
-    - Develop & maintain various components, including custom routing architecture and internal RESTful API
+    - Develop & maintain various components, including custom routing architecture and REST API
   technology:
     - PHP (Vanilla)
     - JavaScript (jQuery/Node.js)
@@ -43,7 +43,7 @@
 - name: EYVCanada
   role: Technical Lead
   description:
-    - Revamped WordPress website with customized design PHP templating
+    - Revamped WordPress website with customized design and PHP templating
     - Ensured technical requirements were met at bimonthly seminars and sessions
   technology:
     - PHP (WordPress)
