@@ -13,18 +13,6 @@
   url: https://www.ontario.ca/page/treasury-board-secretariat/
   start: May 2016
 
-- name: AppMastery
-  role: Junior Software Developer
-  description:
-    - Build SmartTV applications for hosting and streaming video content
-    - Frontend development using modern web technologies
-  technology:
-    - JavaScript
-    - HTML5/CSS3
-    - Git
-  url: http://appmastery.co/
-  start: May 2016
-
 - name: Chapsule
   role: Project Manager & Developer
   description:
