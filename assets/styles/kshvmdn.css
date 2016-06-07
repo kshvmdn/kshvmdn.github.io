@@ -1,3 +1,22 @@
+* {
+    -webkit-transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -ms-transition: .2s ease all;
+    -o-transition: .2s ease all;
+    transition: .2s ease all;
+}
+
+html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+}
+
+
 div.container {
     padding: 30px 20px;
 
@@ -61,12 +80,12 @@ main .console .code {
     max-height: 450px;
     padding: 10px 40px;
 
+    white-space: nowrap;
+
     color: #FFF;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     background-color: #383737;
-
-    white-space: nowrap;
 }
 
 main .code .block {
@@ -161,7 +180,7 @@ main .code .result.json .value.link a:hover {
 
 @media screen and (max-width: 550px) {
     main .console {
-        font-size: 0.8em;
+        font-size: .8em;
     }
 
     main .console .code {
