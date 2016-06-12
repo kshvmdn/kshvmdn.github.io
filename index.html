@@ -10,6 +10,13 @@ links:
   - name: LinkedIn
     href: mailto:kshvmdn@gmail.com
     slug: Contact
+categories:
+  - name: meta
+  - name: education
+  - name: projects
+  - name: work
+    slug: work_experience
+  - name: links
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -32,42 +39,22 @@ links:
     <header>
       <h1 id="name"><a href="/">Kashav Madan</a></h1>
       <div id="links">
-        {% for a in page.links %}
-          <a href="{{ a.href }}" title="{{ a.name }}">{{ a.slug }}</a>
+        {% for l in page.links %}
+          <a href="{{ l.href }}" title="{{ l.name }}">{{ l.slug }}</a>
         {% endfor %}
       </div>
     </header>
     <main>
       <div class="console">
         <div class="code">
-          <div class="block" id="info-block">
-            <div class="input">kshvmdn.info</div>
+          {% for c in page.categories %}
+          <div class="block" id="{{ c.name }}-block">
+            <div class="input">kshvmdn.{% if c.slug %}{{ c.slug }}{% else %}{{ c.name }}{% endif %}</div>
             <div class="result">
-              <pre class="json"><code id="info"></code></pre>
+              <pre class="json"><code id="{{ c.name }}-json"></code></pre>
             </div>
           </div>
-          <div class="block" id="education-block">
-            <div class="input">kshvmdn.education</div>
-            <div class="result">
-              <pre class="json"><code id="education"></code></pre>
-            </div>
-          </div>
-          <div class="block" id="projects-block">
-            <div class="input">kshvmdn.projects</div>
-            <div class="result">
-              <pre class="json"><code id="projects"></code></pre>
-            </div>
-          </div>
-          <div class="block" id="work-block">
-            <div class="input">kshvmdn.work_experience</div>
-            <div class="result">
-              <pre class="json"><code id="work"></code></pre>
-            </div>
-          </div>
-          <div class="block" id="resume">
-            <div class="input">kshvmdn.resume</div>
-            <div class="result link string"><a href="./assets/docs/resume.pdf">resume.pdf</a></div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </main>

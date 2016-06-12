@@ -13,7 +13,11 @@ const lib = {
       var r = pIndent || '';
 
       if (pKey) {
-        r += '<span class=' + classes.key + '>' + pKey.replace(/[": ]/g, '') + '</span>: ';
+        $key = document.createElement('span');
+        $key.setAttribute('class', classes.key);
+        $key.innerHTML = pKey.replace(/[": ]/g, '') + ': ';
+
+        r += $key.outerHTML;
       }
 
       if (pVal) {
@@ -35,12 +39,21 @@ const lib = {
             break;
         }
 
-        if (/(https?:\/\/[^\s]+)/g.test(pVal)) {
-          pVal = pVal.slice(1, pVal.length-1);
-          pVal = '"<a href=' + pVal + '>' + pVal + '</a>"';
+        if (/(https?:\/\/[^\s]+)|.\/assets/g.test(pVal)) {
+          pVal = pVal.replace(/"/g, '');
+
+          var $a = document.createElement('a');
+          $a.setAttribute('href', pVal);
+          $a.innerHTML = /.\/assets/g.test(pVal) ? pVal.substr(pVal.lastIndexOf('/') + 1) : pVal;
+
+          pVal = '"' + $a.outerHTML + '"';
         }
 
-        r += '<span class=' + classes[type] + '>' + pVal + '</span>';
+        var $val = document.createElement('span');
+        $val.setAttribute('class', classes[type]);
+        $val.innerHTML = pVal;
+
+        r += $val.outerHTML;
       }
 
       return r + (pEnd || '');
@@ -54,7 +67,7 @@ const lib = {
     }
   },
   data: {
-    info: {
+    meta: {
       name: 'Kashav Madan',
       origin: 'Brampton, ON, Canada',
       age: 18,
@@ -80,7 +93,7 @@ const lib = {
       },
       {
         name: 'SEEN IT',
-        description: 'Replacement for the deprecated reddit.tv, a web application for viewing videos from /r/videos.',
+        description: 'Replacement for the deprecated reddit.tv, a web application for streaming videos via /r/videos.',
         link: 'https://github.com/kshvmdn/seen-it',
         technology: ['ReactJS']
       },
@@ -112,15 +125,22 @@ const lib = {
         end: 'November 2015'
       }
     ],
+    links: {
+      github: 'https://github.com/kshvmdn',
+      linkedin: 'https://linkedin.com/in/kshvmdn',
+      twitter: 'https://twitter.com/kshvmdn',
+      resume: './assets/docs/resume.pdf'
+    }
   }
 };
 
 window.onload = function() {
   for (var k in lib.data) {
-    var $el = document.getElementById(k);
+    var $el = document.getElementById(k + '-json');
     $el.innerHTML = lib.json.prettyPrint(lib.data[k]);
   }
 
-  console.log('hi!');
+  document.querySelector('.console').style.display = 'block';
+
   console.log('http://github.com/kshvmdn');
 };
