@@ -105,8 +105,18 @@ main .code .input:before {
     content: '> ';
 }
 
+main .code .result {
+    color: #6F7783;
+}
+
 main .code a {
-    color: #B9C0CB;
+    text-decoration: none;
+
+    color: inherit;
+}
+
+main .code a:hover {
+    text-decoration: underline;
 }
 
 main .code pre,

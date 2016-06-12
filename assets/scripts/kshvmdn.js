@@ -102,7 +102,7 @@ const lib = {
         name: 'Chapsule',
         role: 'Lead Developer',
         description: null,
-        start: 'February 2016',
+        start: 'February 2015',
         end: null
       }, {
         name: 'Empower Youth Vision',
