@@ -31,6 +31,11 @@ header {
     text-align: center;
 }
 
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
 header #name {
     font-weight: 400;
 }
@@ -61,8 +66,7 @@ main {
 }
 
 main .console {
-    font-family: 'Roboto Mono';
-    font-size: .9em;
+    font-family: 'PT Mono';
     font-weight: 300;
 
     width: 100%;
@@ -71,21 +75,21 @@ main .console {
     padding-top: 18px;
 
     border-radius: 5px;
-    background-color: #CCC;
+    background-color: #E1E1E1;
 }
 
 main .console .code {
     overflow: scroll;
 
-    max-height: 450px;
+    max-height: 500px;
     padding: 10px 40px;
 
     white-space: nowrap;
 
-    color: #FFF;
+    color: ghostwhite;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: #383737;
+    background-color: #2B2F3A;
 }
 
 main .code .block {
@@ -94,96 +98,67 @@ main .code .block {
 
 main .code .input {
     margin: 5px auto;
-
-    color: #FAFAFA;
-}
-
-main .code .result {
-    color: #CCC;
 }
 
 main .code .input:before {
     content: '> ';
 }
 
-main .code .result.string:before,
-main .code .result.string:after {
-    content: '\'';
+main .code a {
+    color: #B9C0CB;
 }
 
-main .code .result.link a {
+main .code pre,
+main .code code {
+    font: inherit;
+
+    margin: 0 auto;
+    padding: 0;
+
+    color: #6F7783;
+}
+
+main .code pre a {
     color: inherit;
 }
 
-main .code .result.link a.no_decoration {
-    text-decoration: none;
+main .code .json-key {
+    color: #B9C0CB;
 }
 
-main .code .result.link a:hover {
-    color: #3A92C8;
+main .code .json-value {
+    color: #E88388;
 }
 
-main .code .result.array:before {
-    content: '[';
-    white-space: pre;
+main .code .json-string {
+    color: #A7CC8C;
 }
 
-main .code .result.array:after {
-    content: ']';
-    white-space: pre;
+main .code .json-bool {
+    color: #d291e4;
 }
 
-
-main .code .result.json:before {
-    content: '{\A';
-    white-space: pre;
+main .code .json-null {
+    color: #6F7783;
 }
 
-main .code .result.json:after {
-    content: '}';
-}
-
-main .code .result.json .key {
-    font-weight: 400;
-}
-
-main .code .result.json .key:before {
-    content: '\00a0\00a0';
-}
-
-main .code .result.json .key:after {
-    content: ': ';
-}
-
-main .code .result.json .value.string:before {
-    content: '\'';
-}
-
-main .code .result.json .value.string:not(:last-child):after {
-    content: '\',\A';
-    white-space: pre;
-}
-
-main .code .result.json .value.string:last-child:after {
-    content: '\'\A';
-    white-space: pre;
-}
-
-main .code .result.json .value.link a {
-    color: inherit;
-}
-
-main .code .result.json .value.link a:hover {
-    color: #3A92C8;
-}
-
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
     main .console {
-        font-size: .8em;
+        font-size: 0.9em;
+    }
+
+    main .console .code {
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .console {
+        font-size: 0.8em;
     }
 
     main .console .code {
         padding: 0 20px;
     }
 }
+
