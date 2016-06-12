@@ -32,8 +32,9 @@ header {
 }
 
 header a {
-    color: inherit;
     text-decoration: none;
+
+    color: inherit;
 }
 
 header #name {
@@ -135,7 +136,7 @@ main .code .json-string {
 }
 
 main .code .json-bool {
-    color: #d291e4;
+    color: #D291E4;
 }
 
 main .code .json-null {
@@ -144,7 +145,7 @@ main .code .json-null {
 
 @media screen and (max-width: 800px) {
     main .console {
-        font-size: 0.9em;
+        font-size: .9em;
     }
 
     main .console .code {
@@ -154,7 +155,7 @@ main .code .json-null {
 
 @media screen and (max-width: 600px) {
     main .console {
-        font-size: 0.8em;
+        font-size: .8em;
     }
 
     main .console .code {
