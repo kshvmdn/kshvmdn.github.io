@@ -24,13 +24,13 @@ links:
 
   <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic|Roboto+Mono:400,300,100'>
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=PT+Mono'>
   <link rel="stylesheet" type="text/css" href="./assets/styles/kshvmdn.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1 id="name">Kashav Madan</h1>
+      <h1 id="name"><a href="/">Kashav Madan</a></h1>
       <div id="links">
         {% for a in page.links %}
           <a href="{{ a.href }}" title="{{ a.name }}">{{ a.slug }}</a>
@@ -40,57 +40,29 @@ links:
     <main>
       <div class="console">
         <div class="code">
-          <div class="block" id="origin">
-            <div class="input">kshvmdn.origin</div>
-            <div class="result string">Brampton, ON, Canada</div>
+          <div class="block" id="info-block">
+            <div class="input">kshvmdn.info</div>
+            <div class="result">
+              <pre class="json"><code id="info"></code></pre>
+            </div>
           </div>
-          <div class="block" id="education">
+          <div class="block" id="education-block">
             <div class="input">kshvmdn.education</div>
-            <div class="result json">
-                <span class="key">school</span><span class="value string">University of Toronto</span>
-                <span class="key">major</span><span class="value string">Computer Science</span>
-                <span class="key">expected_graduation</span><span class="value string">2019</span>
+            <div class="result">
+              <pre class="json"><code id="education"></code></pre>
             </div>
           </div>
-          <div class="block" id="projects-0">
-            <div class="input">kshvmdn.projects[0]</div>
-            <div class="result json">
-              <span class="key">name</span><span class="value link string"><a href="https://github.com/kshvmdn/show-me-a-movie">Show Me a Movie</a></span>
-              <span class="key">technology</span><span class="value string">JavaScript</span>
-              <span class="key">description</span><span class="value string">A CLI for streaming movie torrents.</span>
-            </div>
-          </div>
-          <div class="block" id="projects-1">
-            <div class="input">kshvmdn.projects[1]</div>
-            <div class="result json">
-              <span class="key">name</span><span class="value link string"><a href="http://github.com/kshvmdn/next-ride-api">NextRide API</a></span>
-              <span class="key">technology</span><span class="value string">Python</span>
-              <span class="key">description</span><span class="value string">A scraper and web API for real-time Brampton Transit bus timings.</span>
-            </div>
-          </div>
-          <div class="block" id="projects-more">
+          <div class="block" id="projects-block">
             <div class="input">kshvmdn.projects</div>
-            <div class="result array"><span class="result link"><a href="http://github.com/kshvmdn" class="no_decoration">...</a></span></div>
-          </div>
-          <div class="block" id="experience-0">
-            <div class="input">kshvmdn.work_experience[0]</div>
-            <div class="result json">
-              <span class="key">name</span><span class="value link string"><a href="https://www.ontario.ca/page/treasury-board-secretariat">Ontario Public Service</a></span>
-              <span class="key">role</span><span class="value string">Jr. Developer</span>
-              <span class="key">start</span><span class="value string">May 2016</span>
+            <div class="result">
+              <pre class="json"><code id="projects"></code></pre>
             </div>
           </div>
-          <div class="block" id="experience-1">
-            <div class="input">kshvmdn.work_experience[1]</div>
-            <div class="result json">
-              <span class="key">name</span><span class="value link string"><a href="http://chapsule.com">Chapsule</a></span>
-              <span class="key">role</span><span class="value string">Lead Developer</span>
-              <span class="key">start</span><span class="value string">March 2015</span>
-            </div>
-          </div>
-          <div class="block" id="experience-more">
+          <div class="block" id="work-block">
             <div class="input">kshvmdn.work_experience</div>
-            <div class="result array"><span class="result link"><a href="http://linkedin.com/in/kshvmdn" class="no_decoration">...</a></span></div>
+            <div class="result">
+              <pre class="json"><code id="work"></code></pre>
+            </div>
           </div>
           <div class="block" id="resume">
             <div class="input">kshvmdn.resume</div>
