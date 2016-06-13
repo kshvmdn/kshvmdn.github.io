@@ -87,7 +87,7 @@ const lib = {
       },
       {
         name: 'Next Ride API',
-        description: 'Scraper and API for real-time Brampton Transit bus schedules.',
+        description: 'Scraper and web API for real-time Brampton Transit bus schedules.',
         link: 'https://github.com/kshvmdn/next-ride-api',
         technology: ['Python', 'Node.js']
       },
@@ -102,7 +102,14 @@ const lib = {
         description: 'Twitter bot for automatically replying to mentions that contain a specific phrase.',
         link: 'https://github.com/kshvmdn/tweetbot',
         technology: ['Python']
-      }
+      },
+      {
+        name: 'Border Times',
+        description: 'Web API and scraper for Canadian border wait times.',
+        link: 'https://github.com/kshvmdn/border-times',
+        technology: ['Python (Flask)']
+      },
+      'https://github.com/kshvmdn?tab=repositories'
     ],
     work: [
       {
@@ -123,14 +130,10 @@ const lib = {
         description: null,
         start: 'May 2015',
         end: 'November 2015'
-      }
+      },
+      'https://linkedin.com/in/kshvmdn'
     ],
-    links: {
-      github: 'https://github.com/kshvmdn',
-      linkedin: 'https://linkedin.com/in/kshvmdn',
-      twitter: 'https://twitter.com/kshvmdn',
-      resume: './assets/docs/resume.pdf'
-    }
+    resume: './assets/docs/resume.pdf'
   }
 };
 
@@ -141,6 +144,4 @@ window.onload = function() {
   }
 
   document.querySelector('.console').style.display = 'block';
-
-  console.log('http://github.com/kshvmdn');
 };

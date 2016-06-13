@@ -16,6 +16,10 @@ html {
     -khtml-user-select: none;
 }
 
+a {
+    cursor: pointer;
+}
+
 
 div.container {
     padding: 30px 20px;
