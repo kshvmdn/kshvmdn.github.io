@@ -70,11 +70,40 @@ main {
     width: 100%;
     max-width: 825px;
     margin: 0 auto;
-    padding-top: 18px;
+    padding: 0;
     border-radius: 5px;
     background-color: #E1E1E1;
     -webkit-animation: pulse 0.5s;
     animation: pulse 0.5s;
+
+    a {
+        color: #E1E1E1;
+        text-decoration: none;
+    }
+}
+
+.taskbar {
+    margin: 0;
+    padding: 4px 10px;
+
+    a {
+        border-radius: 50%;
+        width: 0.7em;
+        height: 0.7em;
+        display: inline-block;
+
+        &.red {
+            background-color: #FC605C;
+        }
+
+        &.yellow {
+            background-color: #FDBC40;
+        }
+
+        &.green {
+            background-color: #34C84A;
+        }
+    }
 }
 
 .code {
