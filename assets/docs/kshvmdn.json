@@ -1,0 +1,89 @@
+{
+  "meta":{
+    "name":"Kashav Madan",
+    "origin":"Brampton, ON, Canada",
+    "age":18,
+    "occupation":[
+      "student",
+      "developer",
+      "designer"
+    ]
+  },
+  "education":{
+    "school":"University of Toronto",
+    "major":"Computer Science",
+    "expected_graduation":2019
+  },
+  "projects":[
+    {
+      "name":"Show Me a Movie",
+      "description":"Command line tool for streaming movie torrents.",
+      "link":"https://www.npmjs.com/package/show-me-a-movie",
+      "technology":[
+        "Node.js"
+      ]
+    },
+    {
+      "name":"Next Ride API",
+      "description":"Scraper and web API for real-time Brampton Transit bus schedules.",
+      "link":"https://github.com/kshvmdn/next-ride-api",
+      "technology":[
+        "Python",
+        "Node.js"
+      ]
+    },
+    {
+      "name":"SEEN IT",
+      "description":"Replacement for the deprecated reddit.tv, a web application for streaming videos via /r/videos.",
+      "link":"https://github.com/kshvmdn/seen-it",
+      "technology":[
+        "ReactJS"
+      ]
+    },
+    {
+      "name":"Tweetbot",
+      "description":"Twitter bot for automatically replying to mentions that contain a specific phrase.",
+      "link":"https://github.com/kshvmdn/tweetbot",
+      "technology":[
+        "Python"
+      ]
+    },
+    {
+      "name":"Border Times",
+      "description":"Web API and scraper for Canadian border wait times.",
+      "link":"https://github.com/kshvmdn/border-times",
+      "technology":[
+        "Python (Flask)"
+      ]
+    }
+  ],
+  "work":[
+    {
+      "name":"Ontario Public Service",
+      "role":"Junior Developer",
+      "description":null,
+      "start":"May 2016",
+      "end":null
+    },
+    {
+      "name":"Chapsule",
+      "role":"Lead Developer",
+      "description":null,
+      "start":"February 2015",
+      "end":null
+    },
+    {
+      "name":"Empower Youth Vision",
+      "role":"Technical Lead",
+      "description":null,
+      "start":"May 2015",
+      "end":"November 2015"
+    }
+  ],
+  "links":{
+    "resume":"./assets/docs/resume.pdf",
+    "github":"https://github.com/kshvmdn",
+    "linkedin":"https://linkedin.com/in/kshvmdn",
+    "twitter":"https://twitter.com/kshvmdn"
+  }
+}
