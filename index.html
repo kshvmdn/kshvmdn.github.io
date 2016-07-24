@@ -3,13 +3,13 @@ title: Kashav Madan
 links:
   - name: LinkedIn
     href: https://linkedin.com/in/kshvmdn
-    slug: Connect
+    slug: connect
   - name: GitHub
     href: https://github.com/kshvmdn
-    slug: Code
+    slug: code
   - name: Email
     href: mailto:kshvmdn@gmail.com
-    slug: Contact
+    slug: contact
 categories:
   - name: meta
   - name: education
@@ -41,7 +41,7 @@ categories:
       <h1 id="name"><a href="/">Kashav Madan</a></h1>
       <div id="links">
         {% for link in page.links %}
-          <a href="{{ link.href }}" title="{{ link.name }}">{{ link.slug }}</a>
+          <a href="{{ link.href }}" title="{{ link.name }}">{{ link.slug | capitalize }}</a>
         {% endfor %}
       </div>
     </header>
