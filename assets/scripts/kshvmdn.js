@@ -1,11 +1,11 @@
 var json = {
   replacer: function(match, pIndent, pKey, pVal, pEnd) {
     var classes = {
-      key: 'json-key',
-      val: 'json-value',
-      str: 'json-string',
-      bool: 'json-bool',
-      none: 'json-null'
+      key: 'json key',
+      val: 'json value',
+      str: 'json string',
+      bool: 'json bool',
+      none: 'json null'
     };
 
     var r = pIndent || '';

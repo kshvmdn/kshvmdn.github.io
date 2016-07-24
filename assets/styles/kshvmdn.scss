@@ -1,0 +1,225 @@
+---
+---
+
+* {
+    -webkit-transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -ms-transition: .2s ease all;
+    -o-transition: .2s ease all;
+    transition: .2s ease all;
+}
+
+html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+div.container {
+    padding: 30px 20px;
+    color: #484141;
+}
+
+header {
+    font-family: 'Merriweather';
+    padding: 15px 0;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #name {
+        font-weight: 400;
+    }
+
+    #links a {
+        font-weight: 300;
+        margin: auto 10px;
+        vertical-align: middle;
+        text-decoration: none;
+        color: inherit;
+
+        &:nth-child(2) {
+            font-size: 1.2em;
+        }
+
+        &:hover {
+            color: #0000EE;
+        }
+    }
+}
+
+main {
+    display: block;
+    padding: 45px 0;
+}
+
+.console {
+    font-family: 'PT Mono';
+    font-weight: 300;
+    display: none;
+    width: 100%;
+    max-width: 825px;
+    margin: 0 auto;
+    padding-top: 18px;
+    border-radius: 5px;
+    background-color: #E1E1E1;
+    -webkit-animation: pulse 0.5s;
+    animation: pulse 0.5s;
+}
+
+.code {
+    overflow: scroll;
+    max-height: 500px;
+    padding: 5px 40px;
+    white-space: nowrap;
+    color: ghostwhite;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #2B2F3A;
+    font-size: 0.95em;
+
+    .block {
+        margin: 30px 0;
+    }
+
+    .input {
+        margin: 5px auto;
+
+        &:before {
+            content: '> ';
+        }
+    }
+
+    .result {
+        color: #6F7783;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    pre,
+    code {
+        font: inherit;
+        margin: 0 auto;
+        padding: 0;
+        color: #6F7783;
+    }
+
+    pre a {
+        color: inherit;
+    }
+
+    .json {
+        .key {
+            color: #B9C0CB;
+        }
+
+        .value {
+            color: #E88388;
+        }
+
+        .string {
+            color: #A7CC8C;
+        }
+
+        .bool {
+            color: #D291E4;
+        }
+
+        .null {
+            color: #6F7783;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .console {
+        font-size: .9em;
+    }
+
+    .code {
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .console {
+        font-size: .8em;
+    }
+
+    .code {
+        padding: 0 20px;
+    }
+}
+
+/* Shamelessly stolen from https://github.com/daneden/animate.css (: */
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes bounceInUp {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(0, 3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
