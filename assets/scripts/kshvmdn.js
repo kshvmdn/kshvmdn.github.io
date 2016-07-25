@@ -83,13 +83,14 @@ function prettyPrint (obj) {
 
 window.onload = function () {
   getJson('./assets/docs/kshvmdn.json', function(err, res) {
-    if (err || !res) res = {}
+    if (err || !res) return
 
     for (var k in res) {
       var $el = document.getElementById(k + '-json')
       $el.innerHTML = prettyPrint(res[k])
     }
-
+    
+    document.querySelector('.preload').style.display = 'none'
     document.querySelector('.console').style.display = 'block'
   })
 }
