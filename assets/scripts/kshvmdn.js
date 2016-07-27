@@ -29,17 +29,17 @@
   };
 
   replaceJson = function(match, indent, key, val, end) {
-    var $a, $key, $val, end_, start, type;
-    start = indent || '';
-    end = end || '';
+    var $a, $key, $val, body, head, tail, type;
+    body = '';
+    head = indent || '';
+    tail = end || '';
     if (key) {
       $key = document.createElement('span');
       $key.setAttribute('class', TYPE_CLASSES.key);
       $key.innerHTML = key.replace(/[": ]/g, '') + ': ';
-      start += $key.outerHTML;
+      body += $key.outerHTML;
     }
     if (val) {
-      type = void 0;
       switch (typeof eval(val)) {
         case 'string':
           type = 'str';
@@ -64,9 +64,9 @@
       $val = document.createElement('span');
       $val.setAttribute('class', TYPE_CLASSES[type]);
       $val.innerHTML = val;
-      start += $val.outerHTML;
+      body += $val.outerHTML;
     }
-    return start + end;
+    return head + body + tail;
   };
 
   prettyPrint = function(obj) {
