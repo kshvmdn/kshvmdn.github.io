@@ -1,5 +1,4 @@
 ---
-title: Kashav Madan
 links:
   - name: LinkedIn
     href: https://linkedin.com/in/kshvmdn
@@ -21,86 +20,50 @@ categories:
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="Kashav Madan (@kshvmdn), personal website &amp; portfolio. Software developer, entrepreneur, open source enthusiast.">
-  <meta name="keywords" content="kashav, madan, kshvmdn, university of toronto, javascript">
-
-  <title>{{ page.title }}</title>
-
-  <base href="http://kshvmdn.com">
-
-  <meta property="og:site_name" content="Kashav Madan">
-  <meta property="og:title" content="Kashav Madan">
-  <meta property="og:type" content="profile">
-  <meta property="og:profile:first_name" content="Kashav">
-  <meta property="og:profile:last_name" content="Madan">
-  <meta property="og:profile:username" content="kshvmdn">
-  <meta property="og:profile:gender" content="male">
-  <meta property="og:description" content="Kashav Madan (@kshvmdn), personal website &amp; portfolio. Software developer, entrepreneur, open source enthusiast.">
-  <meta property="og:image" content="./assets/images/kshvmdn.jpg">
-  <meta property="og:url" content="http://kshvmdn.com">
-
-  <meta name="twitter:card" content="Kashav Madan (@kshvmdn), personal website &amp; portfolio.">
-  <meta name="twitter:site" content="@kshvmdn">
-  <meta name="twitter:creator" content="@kshvmdn">
-  <meta name="twitter:url" content="http://kshvmdn.com">
-  <meta name="twitter:title" content="Kashav Madan">
-  <meta name="twitter:description" content="Kashav Madan (@kshvmdn), personal website &amp; portfolio. Software developer, entrepreneur, open source enthusiast.">
-  <meta name="twitter:image" content="./assets/images/kshvmdn.jpg">
-
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic|PT+Mono">
-  <link rel="stylesheet" type="text/css" href="./assets/styles/kshvmdn.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1 id="name"><a href="/">Kashav Madan</a></h1>
-      <div id="links">
-        {% for link in page.links %}
-          <a href="{{ link.href }}" title="{{ link.name }}">{{ link.slug | capitalize }}</a>
-        {% endfor %}
-      </div>
-    </header>
-    <main>
-      <div class="preload">
-        <p>Hey! I'm Kashav, software developer, entrepreneur, open source enthusiast. Currently studying CS @ the University of Toronto. Wanna talk? Get in touch.</p>
-        <p><a href="https://github.com/kshvmdn">GitHub</a> / <a href="http://linkedin.com/in/kshvmdn">LinkedIn</a> / <a href="https://twitter.com/kshvmdn">@kshvmdn</a> / <a href="mailto:kshvmdn@gmail.com">kshvmdn@gmail.com</a></p>
-      </div>
-      <div class="console">
-        <div class="taskbar">
-          <a href="#" class="red"></a>
-          <a href="#" class="yellow"></a>
-          <a href="./assets/docs/kshvmdn.json" target="_blank" class="green"></a>
-        </div>
-        <div class="code">
-          {% for category in page.categories %}
-          <div class="block" id="{{ category.name }}-block">
-            <div class="input">kshvmdn.{% if category.slug %}{{ category.slug }}{% else %}{{ category.name }}{% endif %}</div>
-            <div class="result">
-              <pre class="json"><code id="{{ category.name }}-json"></code></pre>
-            </div>
-          </div>
+  {% include head.html %}
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="name"><a href="/">Kashav Madan</a></h1>
+        <div id="links">
+          {% for link in page.links %}
+            <a href="{{ link.href }}" title="{{ link.name }}">{{ link.slug | capitalize }}</a>
           {% endfor %}
         </div>
-      </div>
-    </main>
-  </div>
-  <script type="text/javascript" src="./assets/scripts/kshvmdn.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      </header>
+      <main>
+        <div class="preload">
+          <p>Hey! I'm Kashav, software developer, entrepreneur, open source enthusiast. Currently studying CS @ University of Toronto. Wanna talk? Get in touch.</p>
+          <p><a href="https://github.com/kshvmdn">GitHub</a> / <a href="http://linkedin.com/in/kshvmdn">LinkedIn</a> / <a href="https://twitter.com/kshvmdn">@kshvmdn</a> / <a href="mailto:kshvmdn@gmail.com">kshvmdn@gmail.com</a></p>
+        </div>
+        <div class="console">
+          <div class="taskbar">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="./assets/docs/kshvmdn.json" target="_blank"></a>
+          </div>
+          <div class="code">
+            {% for category in page.categories %}
+            <div class="block" id="{{ category.name }}-block">
+              <div class="input">kshvmdn.{% if category.slug %}{{ category.slug }}{% else %}{{ category.name }}{% endif %}</div>
+              <div class="result">
+                <pre class="json"><code id="{{ category.name }}-json"></code></pre>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript" src="./assets/scripts/kshvmdn.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-66546308-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</body>
+      ga('create', 'UA-66546308-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>

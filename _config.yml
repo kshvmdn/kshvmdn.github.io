@@ -1,0 +1,9 @@
+title: Kashav Madan
+email: kshvmdn@gmail.com
+description: Kashav Madan (@kshvmdn), personal website &amp; portfolio. Software developer, entrepreneur, open source enthusiast.
+
+exclude: [
+  'old',
+  'LICENSE.md',
+  'README.md'
+]
