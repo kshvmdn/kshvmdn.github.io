@@ -6,6 +6,7 @@
     "occupation":[
       "student",
       "developer",
+      "entrepreneur",
       "designer"
     ]
   },
@@ -33,7 +34,7 @@
       ]
     },
     {
-      "name":"SEEN IT",
+      "name":"SEEN it",
       "description":"Replacement for the deprecated reddit.tv, a web application for streaming videos via /r/videos.",
       "link":"https://github.com/kshvmdn/seen-it",
       "technology":[
@@ -61,9 +62,9 @@
     {
       "name":"Ontario Public Service",
       "role":"Junior Developer",
-      "description":null,
+      "description":"Developed software for enterprise-wide web-based Intranet platform, reaching over 30 000 users daily.",
       "start":"May 2016",
-      "end":null
+      "end":"September 2016"
     },
     {
       "name":"Chapsule",
@@ -75,15 +76,16 @@
     {
       "name":"Empower Youth Vision",
       "role":"Technical Lead",
-      "description":null,
+      "description":"Redesigned and developed website, with focus on content scalability.",
       "start":"May 2015",
       "end":"November 2015"
     }
   ],
+  "resume":"./assets/docs/resume.pdf",
   "links":{
-    "resume":"./assets/docs/resume.pdf",
     "github":"https://github.com/kshvmdn",
     "linkedin":"https://linkedin.com/in/kshvmdn",
-    "twitter":"https://twitter.com/kshvmdn"
+    "twitter":"https://twitter.com/kshvmdn",
+    "medium":"https://medium.com/@kshvmdn"
   }
 }

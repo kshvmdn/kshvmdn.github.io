@@ -15,6 +15,7 @@ categories:
   - name: projects
   - name: work
     slug: work_experience
+  - name: resume
   - name: links
 ---
 
@@ -27,20 +28,23 @@ categories:
         <h1 id="name"><a href="/">Kashav Madan</a></h1>
         <div id="links">
           {% for link in page.links %}
-            <a href="{{ link.href }}" title="{{ link.name }}">{{ link.slug | capitalize }}</a>
+          <a href="{{ link.href }}" title="{{ link.name }}">{{ link.slug | capitalize }}</a>
           {% endfor %}
         </div>
       </header>
       <main>
         <div class="preload">
-          <p>Hey! I'm Kashav, software developer, entrepreneur, open source enthusiast. Currently studying CS @ University of Toronto. Wanna talk? Get in touch.</p>
-          <p><a href="https://github.com/kshvmdn">GitHub</a> / <a href="http://linkedin.com/in/kshvmdn">LinkedIn</a> / <a href="https://twitter.com/kshvmdn">@kshvmdn</a> / <a href="mailto:kshvmdn@gmail.com">kshvmdn@gmail.com</a></p>
+          <p>hey, i'm kashav!<p>
+          <p>technologist, entrepreneur, developer, nerd.</p>
+          <p>currently studying CS @ <a href="http://utoronto.ca" class="uoft">U of T</a>.</p>
+          <p>wanna talk? get in touch!</p>
+          <p><a href="https://github.com/kshvmdn">GitHub</a> / <a href="http://linkedin.com/in/kshvmdn">LinkedIn</a> / <a href="https://twitter.com/kshvmdn">Twitter</a> / <a href="mailto:kshvmdn@gmail.com">Email</a> / <a href="./assets/docs/resume.pdf">Resume</a></p>
         </div>
         <div class="console">
           <div class="taskbar">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="./assets/docs/kshvmdn.json" target="_blank"></a>
+            <a href="#" class="close"></a>
+            <a href="#" class="minimize"></a>
+            <a href="#" class="fullscreen"></a>
           </div>
           <div class="code">
             {% for category in page.categories %}
