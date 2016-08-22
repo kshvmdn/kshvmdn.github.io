@@ -1,91 +1,137 @@
 {
-  "meta":{
-    "name":"Kashav Madan",
-    "origin":"Brampton, ON, Canada",
-    "age":18,
-    "occupation":[
+  "meta": {
+    "name": "Kashav Madan",
+    "origin": "Brampton, ON, Canada",
+    "location": "Toronto, ON, Canada",
+    "age": 18,
+    "occupation": [
       "student",
       "developer",
       "entrepreneur",
       "designer"
     ]
   },
-  "education":{
-    "school":"University of Toronto",
-    "major":"Computer Science",
-    "expected_graduation":2019
+  "education": {
+    "school": "University of Toronto",
+    "major": "Computer Science",
+    "expected_graduation": 2019
   },
-  "projects":[
+  "projects": [
     {
-      "name":"Show Me a Movie",
-      "description":"Command line tool for streaming movie torrents.",
-      "link":"https://www.npmjs.com/package/show-me-a-movie",
-      "technology":[
-        "Node.js"
-      ]
-    },
-    {
-      "name":"Next Ride API",
-      "description":"Scraper and web API for real-time Brampton Transit bus schedules.",
-      "link":"https://github.com/kshvmdn/next-ride-api",
-      "technology":[
-        "Python",
-        "Node.js"
-      ]
-    },
-    {
-      "name":"SEEN it",
-      "description":"Replacement for the deprecated reddit.tv, a web application for streaming videos via /r/videos.",
-      "link":"https://github.com/kshvmdn/seen-it",
-      "technology":[
-        "ReactJS"
-      ]
-    },
-    {
-      "name":"Tweetbot",
-      "description":"Twitter bot for automatically replying to mentions that contain a specific phrase.",
-      "link":"https://github.com/kshvmdn/tweetbot",
-      "technology":[
+      "name": "Show Me a Movie",
+      "description": "Command line interface for streaming movie torrents.",
+      "link": [
+        "https://www.npmjs.com/package/show-me-a-movie",
+        "https://github.com/kshvmdn/show-me-a-movie"
+      ],
+      "technology": [
+        "Node.js",
         "Python"
       ]
     },
     {
-      "name":"Border Times",
-      "description":"Web API and scraper for Canadian border wait times.",
-      "link":"https://github.com/kshvmdn/border-times",
-      "technology":[
+      "name": "Next Ride API",
+      "description": "Scraper and REST API for real-time Brampton Transit bus schedules.",
+      "link": [
+        "http://kshvmdn.com/next-ride-api/",
+        "https://github.com/kshvmdn/next-ride-api"
+      ],
+      "technology": [
+        "Python",
+        "Node.js",
+        "RethinkDB"
+      ]
+    },
+    {
+      "name": "SEEN it",
+      "description": "Replacement for the deprecated reddit.tv, a web application for streaming videos via /r/videos.",
+      "link": "https://github.com/kshvmdn/seen-it",
+      "technology": [
+        "React"
+      ]
+    },
+    {
+      "name": "Tweetbot",
+      "description": "Twitter bot for automatically replying to mentions that contain a specific phrase.",
+      "link": "https://github.com/kshvmdn/tweetbot",
+      "technology": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Border Times",
+      "description": "REST API and scraper for Canadian border wait times.",
+      "link": "https://github.com/kshvmdn/border-times",
+      "technology": [
         "Python (Flask)"
+      ]
+    },
+    {
+      "name": "Bikeshare",
+      "description": "A Node.js wrapper for the Toronto Bikeshare API (real-time bike availability and locations).",
+      "link": [
+        "https://npmjs.com/package/bikeshare",
+        "https://github.com/kshvmdn/bikeshare"
+      ],
+      "technology": [
+        "Node.js"
+      ]
+    },
+    {
+      "name": "cobalt-uoft.py",
+      "description": "A Python wrapper for the University of Toronto Cobalt Open Data API.",
+      "link": [
+        "https://pypi.python.org/pypi/cobaltuoft",
+        "https://github.com/kshvmdn/cobalt-uoft-python"
+      ],
+      "technology": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Now Playing",
+      "description": "Command line interface to control iTunes playback.",
+      "link": "https://github.com/kshvmdn/now-playing",
+      "technology": [
+        "Python"
       ]
     }
   ],
-  "work":[
+  "work": [
     {
-      "name":"Ontario Public Service",
-      "role":"Junior Developer",
-      "description":"Developed software for enterprise-wide web-based Intranet platform, reaching over 30 000 users daily.",
-      "start":"May 2016",
-      "end":"September 2016"
+      "name": "Ontario Public Service",
+      "role": "Web Developer",
+      "description": "Developed software for enterprise-wide web-based Intranet platform, serving over 35 000 users daily.",
+      "start": "May 2016",
+      "end": "September 2016"
     },
     {
-      "name":"Chapsule",
-      "role":"Lead Developer",
-      "description":null,
-      "start":"February 2015",
-      "end":null
+      "name": "App Mastery",
+      "role": "Junior Software Developer",
+      "description": "Built native Smart TV applications for audio / video streaming.",
+      "start": "May 2016",
+      "end": "September 2016"
     },
     {
-      "name":"Empower Youth Vision",
-      "role":"Technical Lead",
-      "description":"Redesigned and developed website, with focus on content scalability.",
-      "start":"May 2015",
-      "end":"November 2015"
+      "name": "Chapsule",
+      "role": "Lead Developer",
+      "description": null,
+      "start": "February 2015",
+      "end": null
+    },
+    {
+      "name": "Empower Youth Vision",
+      "role": "Technical Lead",
+      "description": "Redesigned and developed website, with focus on content scalability.",
+      "start": "May 2015",
+      "end": "November 2015"
     }
   ],
-  "resume":"./assets/docs/resume.pdf",
-  "links":{
-    "github":"https://github.com/kshvmdn",
-    "linkedin":"https://linkedin.com/in/kshvmdn",
-    "twitter":"https://twitter.com/kshvmdn",
-    "medium":"https://medium.com/@kshvmdn"
+  "resume": "./assets/docs/resume.pdf",
+  "links": {
+    "github": "https://github.com/kshvmdn",
+    "linkedin": "https://linkedin.com/in/kshvmdn",
+    "twitter": "https://twitter.com/kshvmdn",
+    "medium": "https://medium.com/@kshvmdn"
   }
 }
