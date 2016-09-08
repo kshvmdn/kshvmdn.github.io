@@ -1,12 +1,4 @@
-var TYPES = {
-  key: 'json key',
-  val: 'json value',
-  str: 'json string',
-  bool: 'json boolean',
-  none: 'json null'
-};
-
-function getJson(url, cb) {
+function fetch(url, cb) {
   var xhr = new XMLHttpRequest;
   xhr.open('get', url, true);
   xhr.onreadystatechange = function () {
@@ -26,20 +18,28 @@ function getJson(url, cb) {
 }
 
 function replacer(match, indent, key, val, end) {
+  var TYPE_CLASSES = {
+    key: 'json key',
+    val: 'json value',
+    str: 'json string',
+    bool: 'json boolean',
+    none: 'json null'
+  };
+
   var body = '';
   var head = indent || '';
   var tail = end || '';
 
   if (key) {
     var $key = document.createElement('span');
-    $key.setAttribute('class', TYPES.key);
+    $key.setAttribute('class', TYPE_CLASSES.key);
     $key.innerHTML = key.replace(/[": ]/g, '') + ': ';
     body += $key.outerHTML;
   }
 
-  var type;
-
   if (val) {
+    var type;
+
     switch (typeof eval(val)) {
       case 'string':
         type = 'str';
@@ -66,7 +66,7 @@ function replacer(match, indent, key, val, end) {
     }
 
     var $val = document.createElement('span');
-    $val.setAttribute('class', TYPES[type]);
+    $val.setAttribute('class', TYPE_CLASSES[type]);
     $val.innerHTML = val;
     body += $val.outerHTML;
   }
@@ -79,8 +79,8 @@ function prettyPrint(obj) {
   return JSON.stringify(obj, null, 2).replace(/&/g, '&amp;').replace(/\\"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(line, replacer);
 }
 
-window.onload = function() {
-  getJson('./assets/docs/kshvmdn.json', function(err, res) {
+function loadConsole() {
+  fetch('./assets/docs/kshvmdn.json', function(err, res) {
     if (err || !res) {
       document.querySelector('.preload').style.display = 'block';
       document.querySelector('.console').style.display = 'none';
@@ -94,48 +94,53 @@ window.onload = function() {
 
     document.querySelector('.console').style.display = 'block';
 
-    document.querySelector('.close').addEventListener('click', Console.toggle);
-    document.querySelector('.maximize').addEventListener('click', Console.maximize);
+    document.querySelector('.close').addEventListener('click', hideConsole, false);
+    document.querySelector('.maximize').addEventListener('click', toggleConsole, false);
   });
 }
 
-function Console() {};
+function hideConsole() {
+  var isMaximized = document.querySelector('.console').style.maxWidth === '100vw';
+  var isShown = document.querySelector('.console').style.display === 'block';
 
-Console.toggle = Console.prototype.toggle = function () {
-  var $preload = document.querySelector('.preload');
-  var $console = document.querySelector('.console');
+  if (isMaximized) {
+    toggleConsole();
+  }
 
-  var isConsoleShown = $console.style.display === 'block';
-  var isMaximized = $console.style.maxWidth === '100vw';
-
-  if (isMaximized) Console.maximize();
-
-  $preload.style.display = isConsoleShown ? 'block' : 'none';
-  $console.style.display = isConsoleShown ? 'none' : 'block';
+  document.querySelector('.preload').style.display = isShown ? 'block' : 'none';
+  document.querySelector('.console').style.display = isShown ? 'none' : 'block';
 }
 
-Console.maximize = Console.prototype.maximize = function () {
-  var $container = document.querySelector('.container');
-  var $main = document.querySelector('main');
-  var $header = document.querySelector('header');
-  var $console = document.querySelector('.console');
+function toggleConsole() {
   var $code = document.querySelector('.code');
+  var $container = document.querySelector('.container');
+  var $console = document.querySelector('.console');
+  var $header = document.querySelector('header');
+  var $main = document.querySelector('main');
 
-  if ($console.style.display !== 'block' || !$code) return false;
+  if ($console.style.display !== 'block' || !$code) {
+    return false;
+  }
 
-  var isMaximized = $console.style.maxWidth === '100vw';
-
-  var css = [
+  var elements = [
     { element: $container, selectors: { paddingTop: '10px', paddingBottom: '10px' } },
-    { element: $main, selectors: { paddingTop: 0, paddingBottom: 0 } },
+    { element: $main, selectors: { paddingTop: '0px', paddingBottom: '0px' } },
     { element: $header, selectors: { display: 'none' } },
     { element: $console, selectors: { maxWidth: '100vw' } },
     { element: $code, selectors: { maxHeight: '95vh' } }
-  ];
+  ]
 
-  css.forEach(function(opt) {
-    for (var selector in opt.selectors) {
-      opt.element.style[selector] = isMaximized ? '' : opt.selectors[selector]
+  elements.forEach(function(o) {
+    var el = o.element;
+    var selectors = o.selectors;
+
+    for (var s in selectors) {
+      el.style[s] = el.style[s] === selectors[s] ? '' : selectors[s];
     }
   });
 }
+
+(function() {
+  window.addEventListener('load', loadConsole);
+})();
+
