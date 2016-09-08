@@ -7,8 +7,7 @@
     "occupation": [
       "student",
       "developer",
-      "entrepreneur",
-      "designer"
+      "entrepreneur"
     ]
   },
   "education": {
@@ -18,10 +17,21 @@
   },
   "projects": [
     {
-      "name": "Show Me a Movie",
-      "description": "Command line interface for streaming movie torrents.",
+      "name": "nba.js",
+      "description": "A Node.js library to interface with current and historical NBA stats, scores, and data.",
       "link": [
-        "https://www.npmjs.com/package/show-me-a-movie",
+        "https://npmjs.com/package/nba.js",
+        "https://github.com/kshvmdn/nba.js"
+      ],
+      "technology": [
+        "Node.js"
+      ]
+    },
+    {
+      "name": "Show Me a Movie",
+      "description": "A command line utility that leverages the IMDb API to stream movies via The Pirate Bay.",
+      "link": [
+        "https://npmjs.com/package/show-me-a-movie",
         "https://github.com/kshvmdn/show-me-a-movie"
       ],
       "technology": [
@@ -31,7 +41,7 @@
     },
     {
       "name": "Next Ride API",
-      "description": "Scraper and REST API for real-time Brampton Transit bus schedules.",
+      "description": "Scraper and REST API that allows developers to interface with live Brampton Transit bus times.",
       "link": [
         "http://kshvmdn.com/next-ride-api/",
         "https://github.com/kshvmdn/next-ride-api"
@@ -44,7 +54,7 @@
     },
     {
       "name": "SEEN it",
-      "description": "Replacement for the deprecated reddit.tv, a web application for streaming videos via /r/videos.",
+      "description": "A web application to stream videos via /r/videos. A replacement for the deprecated reddit.tv.",
       "link": "https://github.com/kshvmdn/seen-it",
       "technology": [
         "React"
@@ -52,7 +62,7 @@
     },
     {
       "name": "Tweetbot",
-      "description": "Twitter bot for automatically replying to mentions that contain a specific phrase.",
+      "description": "A Twitter bot to automatically reply to mentions that contain a specified phrase.",
       "link": "https://github.com/kshvmdn/tweetbot",
       "technology": [
         "Python"
@@ -60,7 +70,7 @@
     },
     {
       "name": "Border Times",
-      "description": "REST API and scraper for Canadian border wait times.",
+      "description": "REST API and scraper for live Canadian border wait times.",
       "link": "https://github.com/kshvmdn/border-times",
       "technology": [
         "Python (Flask)"
@@ -79,7 +89,7 @@
     },
     {
       "name": "cobalt-uoft.py",
-      "description": "A Python wrapper for the University of Toronto Cobalt Open Data API.",
+      "description": "A Python wrapper to interface with Cobalt, University of Toronto open data APIs and datasets.",
       "link": [
         "https://pypi.python.org/pypi/cobaltuoft",
         "https://github.com/kshvmdn/cobalt-uoft-python"
@@ -89,15 +99,32 @@
       ]
     },
     {
-      "name": "Now Playing",
-      "description": "Command line interface to control iTunes playback.",
-      "link": "https://github.com/kshvmdn/now-playing",
+      "name": "uoft-coursefinder",
+      "description": "A Node.js library and CLI for interfacing with Course Finder, UofT's course index.",
+      "link": [
+        "https://npmjs.com/package/coursefinder",
+        "https://github.com/kshvmdn/uoft-coursefinder"
+      ],
       "technology": [
-        "Python"
+        "Node.js"
       ]
     }
   ],
   "work": [
+    {
+      "name": "UofT Entrepreneurship Hatchery",
+      "role": "Web Developer",
+      "description": null,
+      "start": "September 2016",
+      "end": null
+    },
+    {
+      "name": "Communitech",
+      "role": "Campus Ambassador",
+      "description": null,
+      "start": "September 2016",
+      "end": null
+    },
     {
       "name": "Ontario Public Service",
       "role": "Web Developer",
