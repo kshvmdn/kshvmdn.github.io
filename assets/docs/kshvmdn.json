@@ -61,6 +61,16 @@
       ]
     },
     {
+      "name": "Find Me a Job",
+      "description": "A web platform that matches a job seeker with their \"perfect\" company by analyzing the technical skills and experience on their résumé.",
+      "link": "https://github.com/kshvmdn/find-me-a-job",
+      "technology": [
+        "Python (Flask)",
+        "MongoDB",
+        "OpenCV"
+      ]
+    },
+    {
       "name": "Tweetbot",
       "description": "A Twitter bot to automatically reply to mentions that contain a specified phrase.",
       "link": "https://github.com/kshvmdn/tweetbot",
