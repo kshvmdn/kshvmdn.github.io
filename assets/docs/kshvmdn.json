@@ -1,9 +1,8 @@
 {
   "meta": {
     "name": "Kashav Madan",
-    "origin": "Brampton, ON, Canada",
     "location": "Toronto, ON, Canada",
-    "age": 18,
+    "age": 19,
     "occupation": [
       "student",
       "developer",
@@ -18,7 +17,7 @@
   "projects": [
     {
       "name": "nba.js",
-      "description": "A Node.js library to interface with current and historical NBA stats, scores, and data.",
+      "description": "Node.js library to interface with current and historical NBA stats, scores, and data.",
       "link": [
         "https://npmjs.com/package/nba.js",
         "https://github.com/kshvmdn/nba.js"
@@ -29,7 +28,7 @@
     },
     {
       "name": "Show Me a Movie",
-      "description": "A command line utility that leverages the IMDb API to stream movies via The Pirate Bay.",
+      "description": "Command line utility that leverages the IMDb API to stream movies via The Pirate Bay.",
       "link": [
         "https://npmjs.com/package/show-me-a-movie",
         "https://github.com/kshvmdn/show-me-a-movie"
@@ -40,10 +39,10 @@
       ]
     },
     {
-      "name": "Next Ride API",
-      "description": "Scraper and REST API that allows developers to interface with live Brampton Transit bus times.",
+      "name": "Brampton Transit API",
+      "description": "Scraper and REST API to interface with live Brampton Transit bus times.",
       "link": [
-        "http://kshvmdn.com/next-ride-api/",
+        "http://transit.kshvmdn.com",
         "https://github.com/kshvmdn/next-ride-api"
       ],
       "technology": [
@@ -54,7 +53,7 @@
     },
     {
       "name": "SEEN it",
-      "description": "A web application to stream videos via /r/videos. A replacement for the deprecated reddit.tv.",
+      "description": "Web application to stream videos via /r/videos, a replacement for the deprecated reddit.tv.",
       "link": "https://github.com/kshvmdn/seen-it",
       "technology": [
         "React"
@@ -62,7 +61,7 @@
     },
     {
       "name": "Find Me a Job",
-      "description": "A web platform that matches a job seeker with their \"perfect\" company by analyzing the technical skills and experience on their résumé.",
+      "description": "Web platform that matches a job seeker with their \"perfect\" company by analyzing the technical skills and experience on their résumé.",
       "link": "https://github.com/kshvmdn/find-me-a-job",
       "technology": [
         "Python (Flask)",
@@ -72,7 +71,7 @@
     },
     {
       "name": "Tweetbot",
-      "description": "A Twitter bot to automatically reply to mentions that contain a specified phrase.",
+      "description": "Twitter bot to automatically reply to mentions that contain a specified phrase.",
       "link": "https://github.com/kshvmdn/tweetbot",
       "technology": [
         "Python"
@@ -126,42 +125,48 @@
       "role": "Web Developer",
       "description": null,
       "start": "September 2016",
-      "end": null
+      "end": null,
+      "location": "Toronto"
     },
     {
       "name": "Communitech",
       "role": "Campus Ambassador",
       "description": null,
-      "start": "September 2016",
-      "end": null
-    },
-    {
-      "name": "Ontario Public Service",
-      "role": "Web Developer",
-      "description": "Developed software for enterprise-wide web-based Intranet platform, serving over 35 000 users daily.",
-      "start": "May 2016",
-      "end": "September 2016"
-    },
-    {
-      "name": "App Mastery",
-      "role": "Junior Software Developer",
-      "description": "Built native Smart TV applications for audio / video streaming.",
-      "start": "May 2016",
-      "end": "September 2016"
+      "start": "August 2016",
+      "end": null,
+      "location": "Waterloo / Toronto"
     },
     {
       "name": "Chapsule",
-      "role": "Lead Developer",
+      "role": "Co-Founder, Lead Developer",
       "description": "Manage and contribute to core technical projects, including RESTful API and React Native mobile applications.",
       "start": "February 2015",
-      "end": null
+      "end": null,
+      "location": "Greater Toronto Area"
+    },
+    {
+      "name": "Ontario Public Service",
+      "role": "Junior Web Developer",
+      "description": "Developed software for enterprise-wide web-based Intranet platform, serving over 35 000 users daily.",
+      "start": "May 2016",
+      "end": "September 2016",
+      "location": "Toronto"
+    },
+    {
+      "name": "App Mastery",
+      "role": "Software Developer",
+      "description": "Built native Smart TV applications for audio / video streaming.",
+      "start": "May 2016",
+      "end": "September 2016",
+      "location": "Toronto"
     },
     {
       "name": "Empower Youth Vision",
-      "role": "Technical Lead",
-      "description": "Redesigned and developed website, with focus on content scalability.",
+      "role": "Lead Developer",
+      "description": "Redesigned and developed website, with focus on content scaling and ease of use.",
       "start": "May 2015",
-      "end": "November 2015"
+      "end": "November 2015",
+      "location": "Greater Toronto Area"
     }
   ],
   "resume": "./assets/docs/resume.pdf",

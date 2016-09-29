@@ -83,16 +83,18 @@ function loadConsole() {
   fetch('./assets/docs/kshvmdn.json', function(err, res) {
     if (err || !res) {
       document.querySelector('.preload').style.display = 'block';
-      document.querySelector('.console').style.display = 'none';
+      document.querySelector('.terminal').style.display = 'none';
       return false;
     }
+
+    window.kshvmdn = res;
 
     for (var k in res) {
       var $el = document.getElementById(k + '-json');
       $el.innerHTML = prettyPrint(res[k]);
     }
 
-    document.querySelector('.console').style.display = 'block';
+    document.querySelector('.terminal').style.display = 'block';
 
     document.querySelector('.close').addEventListener('click', hideConsole, false);
     document.querySelector('.maximize').addEventListener('click', toggleConsole, false);
@@ -100,25 +102,25 @@ function loadConsole() {
 }
 
 function hideConsole() {
-  var isMaximized = document.querySelector('.console').style.maxWidth === '100vw';
-  var isShown = document.querySelector('.console').style.display === 'block';
+  var isMaximized = document.querySelector('.terminal').style.maxWidth === '100vw';
+  var isShown = document.querySelector('.terminal').style.display === 'block';
 
   if (isMaximized) {
     toggleConsole();
   }
 
   document.querySelector('.preload').style.display = isShown ? 'block' : 'none';
-  document.querySelector('.console').style.display = isShown ? 'none' : 'block';
+  document.querySelector('.terminal').style.display = isShown ? 'none' : 'block';
 }
 
 function toggleConsole() {
   var $code = document.querySelector('.code');
   var $container = document.querySelector('.container');
-  var $console = document.querySelector('.console');
+  var $terminal = document.querySelector('.terminal');
   var $header = document.querySelector('header');
   var $main = document.querySelector('main');
 
-  if ($console.style.display !== 'block' || !$code) {
+  if ($terminal.style.display !== 'block' || !$code) {
     return false;
   }
 
@@ -126,7 +128,7 @@ function toggleConsole() {
     { element: $container, selectors: { paddingTop: '10px', paddingBottom: '10px' } },
     { element: $main, selectors: { paddingTop: '0px', paddingBottom: '0px' } },
     { element: $header, selectors: { display: 'none' } },
-    { element: $console, selectors: { maxWidth: '100vw' } },
+    { element: $terminal, selectors: { maxWidth: '100vw' } },
     { element: $code, selectors: { maxHeight: '95vh' } }
   ]
 
@@ -143,4 +145,3 @@ function toggleConsole() {
 (function() {
   window.addEventListener('load', loadConsole);
 })();
-

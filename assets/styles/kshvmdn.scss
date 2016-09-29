@@ -117,7 +117,7 @@ main {
 
   p {
     margin: 0 auto;
-    margin-top: 2vh;
+    margin-top: 20px;
 
     &:first-child {
       margin-top: 0;
@@ -131,8 +131,12 @@ main {
       }
     }
 
+    &:nth-last-child(2) {
+      text-align: center;
+    }
+
     &:last-child {
-      margin-top: 2vh;
+      margin-top: 20px;
       text-align: center;
       font-size: 1.1em;
 
@@ -154,7 +158,7 @@ main {
   }
 }
 
-.console {
+.terminal {
   font-family: $mono;
   font-weight: 300;
   display: none;
@@ -164,6 +168,7 @@ main {
   padding: 0;
   border-radius: 5px;
   background-color: #E1E1E1;
+  font-size: 0.9em;
 
   a {
     color: #E1E1E1;
@@ -214,7 +219,7 @@ main {
 .code {
   overflow: scroll;
   max-height: 550px;
-  padding: 5px 40px;
+  padding: 0px 30px;
   white-space: nowrap;
   color: ghostwhite;
   border-bottom-right-radius: 5px;
