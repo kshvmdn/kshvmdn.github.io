@@ -1,6 +1,7 @@
 {
   "meta": {
     "name": "Kashav Madan",
+    "email": "kshvmdn(at)gmail(dot)com",
     "location": "Toronto, ON, Canada",
     "age": 19,
     "occupation": [
@@ -27,6 +28,29 @@
       ]
     },
     {
+      "name": "Drop-In UofT",
+      "description": "Android application to view active classes at the University of Toronto (St. George).",
+      "link": [
+        "http://drop-in.kshvmdn.com/",
+        "https://play.google.com/store/apps/details?id=com.kshvmdn.dropin"
+      ],
+      "technology": [
+        "Golang",
+        "React Native"
+      ]
+    },
+    {
+      "name": "NBA Player Tracker",
+      "description": "Android application to track NBA players and league leaders.",
+      "link": [
+        "http://nba.kshvmdn.com/",
+        "https://play.google.com/store/apps/details?id=com.kshvmdn.nba-player-tracker"
+      ],
+      "technology": [
+        "React Native"
+      ]
+    },
+    {
       "name": "Show Me a Movie",
       "description": "Command line utility that leverages the IMDb API to stream movies via The Pirate Bay.",
       "link": [
@@ -46,9 +70,8 @@
         "https://github.com/kshvmdn/next-ride-api"
       ],
       "technology": [
-        "Python",
         "Node.js",
-        "RethinkDB"
+        "Redis"
       ]
     },
     {
@@ -76,47 +99,6 @@
       "technology": [
         "Python"
       ]
-    },
-    {
-      "name": "Border Times",
-      "description": "REST API and scraper for live Canadian border wait times.",
-      "link": "https://github.com/kshvmdn/border-times",
-      "technology": [
-        "Python (Flask)"
-      ]
-    },
-    {
-      "name": "Bikeshare",
-      "description": "A Node.js wrapper for the Toronto Bikeshare API (real-time bike availability and locations).",
-      "link": [
-        "https://npmjs.com/package/bikeshare",
-        "https://github.com/kshvmdn/bikeshare"
-      ],
-      "technology": [
-        "Node.js"
-      ]
-    },
-    {
-      "name": "cobalt-uoft.py",
-      "description": "A Python wrapper to interface with Cobalt, University of Toronto open data APIs and datasets.",
-      "link": [
-        "https://pypi.python.org/pypi/cobaltuoft",
-        "https://github.com/kshvmdn/cobalt-uoft-python"
-      ],
-      "technology": [
-        "Python"
-      ]
-    },
-    {
-      "name": "uoft-coursefinder",
-      "description": "A Node.js library and CLI for interfacing with Course Finder, UofT's course index.",
-      "link": [
-        "https://npmjs.com/package/coursefinder",
-        "https://github.com/kshvmdn/uoft-coursefinder"
-      ],
-      "technology": [
-        "Node.js"
-      ]
     }
   ],
   "work": [
@@ -133,13 +115,13 @@
       "role": "Campus Ambassador",
       "description": null,
       "start": "August 2016",
-      "end": null,
+      "end": "December 2016",
       "location": "Waterloo / Toronto"
     },
     {
       "name": "Chapsule",
       "role": "Co-Founder, Lead Developer",
-      "description": "Manage and contribute to core technical projects, including RESTful API and React Native mobile applications.",
+      "description": "Manage and contribute to core technical projects, including various backend microservices and iOS/Android applications.",
       "start": "February 2015",
       "end": null,
       "location": "Greater Toronto Area"
@@ -147,7 +129,7 @@
     {
       "name": "Ontario Public Service",
       "role": "Junior Web Developer",
-      "description": "Developed software for enterprise-wide web-based Intranet platform, serving over 35 000 users daily.",
+      "description": "Designed, developed, and tested software for enterprise-wide Intranet platform for over 35 000 users.",
       "start": "May 2016",
       "end": "September 2016",
       "location": "Toronto"
@@ -155,7 +137,7 @@
     {
       "name": "App Mastery",
       "role": "Software Developer",
-      "description": "Built native Smart TV applications for audio / video streaming.",
+      "description": "Built native Smart TV applications for audio and video streaming.",
       "start": "May 2016",
       "end": "September 2016",
       "location": "Toronto"
@@ -163,7 +145,7 @@
     {
       "name": "Empower Youth Vision",
       "role": "Lead Developer",
-      "description": "Redesigned and developed website, with focus on content scaling and ease of use.",
+      "description": "Redesigned and developed website with focus on content scalability and ease-of-use.",
       "start": "May 2015",
       "end": "November 2015",
       "location": "Greater Toronto Area"
@@ -173,7 +155,6 @@
   "links": {
     "github": "https://github.com/kshvmdn",
     "linkedin": "https://linkedin.com/in/kshvmdn",
-    "twitter": "https://twitter.com/kshvmdn",
-    "medium": "https://medium.com/@kshvmdn"
+    "twitter": "https://twitter.com/kshvmdn"
   }
 }
