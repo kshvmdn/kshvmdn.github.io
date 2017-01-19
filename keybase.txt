@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/kshvmdn
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://kshvmdn.com
+  * I am kshvmdn (https://keybase.io/kshvmdn) on keybase.
+  * I have a public key with fingerprint 19E9 0B95 3245 213F 0BD7  80BC 1A72 ED9B 7146 4368
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018473d1953ebc79be1e339f963c3400e52e81480ed74a3c32a601dc23c98cbd6d0a",
+            "fingerprint": "19e90b953245213f0bd780bc1a72ed9b71464368",
+            "host": "keybase.io",
+            "key_id": "1a72ed9b71464368",
+            "kid": "01018473d1953ebc79be1e339f963c3400e52e81480ed74a3c32a601dc23c98cbd6d0a",
+            "uid": "b5f8b203a2df4bada42e703cbda31319",
+            "username": "kshvmdn"
+        },
+        "service": {
+            "hostname": "kshvmdn.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1484809059,
+    "expire_in": 157680000,
+    "prev": "a8ad94fdd3c693cf6819ed8248b25518776eac1b1d96d6cbfe932d8937aa4433",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJbaBNBFE21xjZQUVBRihTWd03jzs5mdyeiiCLiA/zQFgUhzs7MJtva
+bEw2aZum+MDaKhUpFNFvn8RXqQpVEGqtFalKVBAfEV8VwRfUaquoxdmiH4Kfzs8w
+d845c86d21M01uXJC80taFJLXyzK67valnBt3EFIvaBbtE4I1AtVbHRjWymL28Eq
+kwoBQQQi0GQVUoD8kOlERToDDEJkIAUSKIsi80tMA7ImMqrKmNckrIiAEgkSpBGd
+KlTEglcwzEiIxaIxM2JzWYAYEnUuKcl+CUBD1KmqiToBWJUYRboKZEWGisaJYSvu
+MLg5HceZz7R4jR+Co/b+gf/PvhOjcrrf0HRJhFiihqxjimWJqSLkMAwBBMgBxlks
+gquZ4zUeTlbTiNDgFXgxaRLm9NUJ8jfAR6xqzozGLNsi1lZ+EbbtaMDh2XVRB1jD
+9OBviaBuRihvIickWSxuWhEhADiS2KajyZPwLEj0I6/AaqNmjAVNB+FXFU3ky3mG
+Jbkk1jBFskEpJAqCxFA0/hlUk2Qe0O8HmqoqDBOgA4oUqhDdYAhKVENQxViWIRSc
+UNsilhBQuU0c4pJxMxTBdiLGhIburs35rjyPyz1ujDNcLk/hxD8j1x4dPwLWtry/
+tLSxq/dy22pPX9/944XFZaHMge51Pes9p3oHjjTN29LrSl2ovNs4s/N09dDuz0Uz
+Fmz6lplVU7Ew8dSbO7R0Q/NAuiWhFQknT98O3iteNti5unZ8y6WnZSWTr6Sa5Im3
+6+GZgufuxRVzrKrhlytr93vdc37cevR9xarliSndN7KtXcPh1Lg178pd03Y1pJvh
+3VwWta7fd/7csdzHqTe1zlw2/2vrxdL+J9cv32l/XTn/5/7+jmfBzJg9d0oO0+cr
+j6aHbrqupfDi8N7A7CXZByO+x2/dBffJifLewsFJbzrqks07H2YXTJAySnq6b8/x
+6Ks3Bz+c/fJo+6F++5NQ2fYL5FdCag==
+=Vvk1
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kshvmdn
+
+==================================================================

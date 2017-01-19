@@ -44,7 +44,7 @@
       "description": "Android application to track NBA players and league leaders.",
       "link": [
         "http://nba.kshvmdn.com/",
-        "https://play.google.com/store/apps/details?id=com.kshvmdn.nba-player-tracker"
+        "https://play.google.com/store/apps/details?id=com.kshvmdn.nbaplayertracker"
       ],
       "technology": [
         "React Native"
