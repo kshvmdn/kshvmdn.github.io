@@ -1,8 +1,8 @@
 {
   "meta": {
     "name": "Kashav Madan",
-    "email": "kshvmdn(at)gmail(dot)com",
-    "location": "Toronto, ON, Canada",
+    "email": "kshvmdn@gmail.com",
+    "location": "Toronto, Canada",
     "age": 19,
     "occupation": [
       "student",
@@ -75,14 +75,6 @@
       ]
     },
     {
-      "name": "SEEN it",
-      "description": "Web application to stream videos via /r/videos, a replacement for the deprecated reddit.tv.",
-      "link": "https://github.com/kshvmdn/seen-it",
-      "technology": [
-        "React"
-      ]
-    },
-    {
       "name": "Find Me a Job",
       "description": "Web platform that matches a job seeker with their \"perfect\" company by analyzing the technical skills and experience on their résumé.",
       "link": "https://github.com/kshvmdn/find-me-a-job",
@@ -90,14 +82,6 @@
         "Python (Flask)",
         "MongoDB",
         "OpenCV"
-      ]
-    },
-    {
-      "name": "Tweetbot",
-      "description": "Twitter bot to automatically reply to mentions that contain a specified phrase.",
-      "link": "https://github.com/kshvmdn/tweetbot",
-      "technology": [
-        "Python"
       ]
     }
   ],
@@ -108,7 +92,7 @@
       "description": null,
       "start": "September 2016",
       "end": null,
-      "location": "Toronto"
+      "location": "Toronto, Canada"
     },
     {
       "name": "Communitech",
@@ -116,7 +100,7 @@
       "description": null,
       "start": "August 2016",
       "end": "December 2016",
-      "location": "Waterloo / Toronto"
+      "location": "Waterloo/Toronto, Canada"
     },
     {
       "name": "Chapsule",
@@ -132,7 +116,7 @@
       "description": "Designed, developed, and tested software for enterprise-wide Intranet platform for over 35 000 users.",
       "start": "May 2016",
       "end": "September 2016",
-      "location": "Toronto"
+      "location": "Toronto, Canada"
     },
     {
       "name": "App Mastery",
@@ -140,21 +124,14 @@
       "description": "Built native Smart TV applications for audio and video streaming.",
       "start": "May 2016",
       "end": "September 2016",
-      "location": "Toronto"
-    },
-    {
-      "name": "Empower Youth Vision",
-      "role": "Lead Developer",
-      "description": "Redesigned and developed website with focus on content scalability and ease-of-use.",
-      "start": "May 2015",
-      "end": "November 2015",
-      "location": "Greater Toronto Area"
+      "location": "Toronto, Canada"
     }
   ],
   "resume": "./assets/docs/resume.pdf",
   "links": {
     "github": "https://github.com/kshvmdn",
     "linkedin": "https://linkedin.com/in/kshvmdn",
-    "twitter": "https://twitter.com/kshvmdn"
+    "twitter": "https://twitter.com/kshvmdn",
+    "keybase": "https://keybase.io/kshvmdn"
   }
 }
