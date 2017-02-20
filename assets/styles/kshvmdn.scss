@@ -3,7 +3,7 @@
 
 $serif: 'Merriweather', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 $sans-serif: 'Merriweather Sans', 'Open Sans', 'Helvetica', Arial, Verdana;
-$mono: 'PT Mono', 'Lucida Console', Monaco, monospace;
+$mono: 'Droid Sans Mono', 'Lucida Console', Monaco, monospace;
 
 $break-medium: 800px;
 $break-small: 600px;
@@ -153,7 +153,6 @@ main {
 
     &:hover {
       color: #007AB5;
-      font-size: 1.01em;
     }
   }
 }
@@ -269,19 +268,19 @@ main {
       color: #B9C0CB;
     }
 
-    .value {
+    .val {
       color: #E88388;
     }
 
-    .string {
+    .str {
       color: #A7CC8C;
     }
 
-    .boolean {
+    .bool {
       color: #D291E4;
     }
 
-    .null {
+    .none {
       color: #6F7783;
     }
   }
