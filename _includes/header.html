@@ -1,0 +1,10 @@
+<header>
+  <h1><a href="{{ '/' | prepend: site.baseurl }}">hello. i'm <span id="name">Kashav</span>.</a></h1>
+  <ul>
+    {% for link in site.data.links %}
+    <li{% if include.current == link.name %} class="current"{% endif %}>
+      <a title="{{ link.name }}" href="{{ link.href }}">{{ link.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</header>

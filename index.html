@@ -1,22 +1,4 @@
 ---
-links:
-  - name: LinkedIn
-    href: https://linkedin.com/in/kshvmdn
-    slug: connect
-  - name: GitHub
-    href: https://github.com/kshvmdn
-    slug: code
-  - name: Email
-    href: mailto:kshvmdn@gmail.com
-    slug: contact
-categories:
-  - name: meta
-  - name: education
-  - name: projects
-  - name: work
-    slug: work_experience
-  - name: resume
-  - name: links
 ---
 
 <!DOCTYPE html>
@@ -24,43 +6,14 @@ categories:
   {% include head.html %}
   <body>
     <div class="container">
-      <header>
-        <h1 id="name"><a href="/">Kashav Madan</a></h1>
-        <div id="links">
-          {% for link in page.links %}
-          <a href="{{ link.href }}" title="{{ link.name }}">{{ link.slug | capitalize }}</a>
-          {% endfor %}
-        </div>
-      </header>
-      <main>
-        <div class="preload">
-          <p>Hey, I'm Kashav &mdash; welcome to my site!</p>
-          <p>I'm a software developer and I love to build. I'm a huge fan of open source, take a look at my <a href="https://github.com">GitHub</a> profile to see what I've been up to.</p>
-          <p>I'm also passionate about entreprenuership. I'm currently working on <a href="https://chapsule.com">Chapsule</a>, a platform where event attendees can collaboratively collect, share, and view their photos &amp; videos.</p>
-          <p>I attend the <a href="http://web.cs.toronto.edu/">University of Toronto</a>, where I'm specializing in Computer Science with a focus in Computer Systems &amp; Artificial Intelligence. I expect to graduate around 2019.</p>
-          <p>I'm seeking a position for the upcoming summer, checkout my <a href="/assets/docs/resume.pdf">résumé</a> if you're hiring.</p>
-          <p>Wanna chat? Feel free to get in touch!</p>
-          <p><a href="https://github.com/kshvmdn">GitHub</a> / <a href="http://linkedin.com/in/kshvmdn">LinkedIn</a> / <a href="https://twitter.com/kshvmdn">Twitter</a> / <a href="mailto:kshvmdn@gmail.com">Email</a></p>
-        </div>
-        <div class="terminal pulse">
-          <div class="taskbar">
-            <a href="javascript:void(0)" class="close"></a>
-            <a href="javascript:void(0)" class="minimize"></a>
-            <a href="javascript:void(0)" class="maximize"></a>
-          </div>
-          <div class="code">
-            {% for category in page.categories %}
-            <div class="block" id="{{ category.name }}-block">
-              <div class="input">kshvmdn.{% if category.slug %}{{ category.slug }}{% else %}{{ category.name }}{% endif %}</div>
-              <div class="result">
-                <pre class="json"><code id="{{ category.name }}-json"></code></pre>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </main>
+      {% include header.html %}
+      <section class="content">
+        <p>I'm a software developer and I love to build. I mainly work on stuff in Go or JavaScript. You can view some of my projects <a href="{{ '/projects' | prepend: site.baseurl }}">here</a>.</p>
+        <p>I'm also a huge advocate for open source, most of my work is publicly available on <a href="https://github.com/kshvmdn">GitHub</a> or <a href="https://gitlab.com/kashav">GitLab</a>.</p>
+        <p>I currently attend the <a href="https://web.cs.toronto.edu">University of Toronto</a>, where I study Computer Science and Math. My focuses lie in Computer Systems and Artificial Intelligence.</p>
+        <p>Feel free to view my <a href="{{ '/static/docs/resume.pdf' | prepend: site.baseurl }}">resume</a> or send me an <a href="mailto:kshvmdn@gmail.com">e-mail</a> to get in touch. I'm also on <a href="https://twitter.com/kshvmdn">Twitter</a>, if you'd prefer that.</p>
+      </section>
     </div>
-    {% include foot.html %}
+    {% include footer.html %}
   </body>
 </html>
