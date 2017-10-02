@@ -1,0 +1,10 @@
+- name: resume
+  href: /static/docs/resume.pdf
+- name: projects
+  href: /projects
+- name: e-mail
+  href: mailto:kshvmdn@gmail.com
+- name: github
+  href: https://github.com/kshvmdn
+- name: linkedin
+  href: https://linkedin.com/in/kshvmdn

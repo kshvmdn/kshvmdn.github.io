@@ -1,0 +1,21 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include header.html current="projects" %}
+      <section class="content projects">
+        {% for project in site.data.projects %}
+        <div class="project">
+          <p class="project--name">{{ project.name }} ({{ project.tech }}) <a class="project--link" href="{{ project.link }}" target="_blank">{{ project.slug }}</a></p>
+          <p class="project--description">{{ project.desc }}</p>
+        </div>
+        {% endfor %}
+      </section>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
