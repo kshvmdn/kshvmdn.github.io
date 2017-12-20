@@ -6,13 +6,20 @@
   {% include head.html %}
   <body>
     <div class="container">
-      {% include header.html %}
-      <section class="content">
-        <p>I'm a software developer and I mainly work on stuff in Go or JavaScript. You can view some of my projects <a href="{{ '/projects' | prepend: site.baseurl }}">here</a>.</p>
-        <p>I'm also a huge advocate for open source, most of my work is publicly available on <a href="https://github.com/kshvmdn">GitHub</a> or <a href="https://gitlab.com/kashav">GitLab</a>.</p>
-        <p>I currently attend the <a href="https://web.cs.toronto.edu">University of Toronto</a>, where I study Computer Science and Math. My focuses lie in Computer Systems and Artificial Intelligence.</p>
-        <p>Feel free to view my <a href="{{ '/static/docs/resume.pdf' | prepend: site.baseurl }}">resume</a> or send me an <a href="mailto:kshvmdn@gmail.com">e-mail</a> to get in touch.</p>
-      </section>
+      <h1>Kashav Madan <i>kshvmdn</i></h1>
+      <hr>
+      <h2 id="about">About</h2>
+      <p>I'm a software developer and open source enthusiast. Most of my work is publicly available on <a href="https://github.com/kshvmdn/">GitHub</a> or <a href="https://gitlab.com/kashav">GitLab</a>.</p>
+      <p>I currently attend the <a href="http://web.cs.toronto.edu/">University of Toronto</a>, where I study computer science and mathematics. My focuses lie in computer systems and artificial intelligence.</p>
+      <p>Feel free to view my <a href="{{ '/static/docs/resume.pdf' | prepend: site.baseurl }}">resume</a> or shoot me an <a href="mailto:kshvmdn@gmail.com">e-mail</a> to get in touch.</p>
+      <hr>
+      <h2 id="projects">Selected Projects</h2>
+      <div class="projects">{% for project in site.data.projects %}
+        <p><a href="{{ project.link }}" title="{{ project.desc }}" target="_blank">{{ project.name }}</a>{% comment %} ({{ project.tech }}){% endcomment %}</p>
+      {% endfor %}</div>
+      <hr>
+      <h2 id="contact">Contact</h2>
+      <p><a href="mailto:kshvmdn@gmail.com">email</a>, <a href="https://github.com/kshvmdn">github</a>, <a href="https://linkedin.com/in/kshvmdn">linkedin</a>, <a href="https://twitter.com/kshvmdn">twitter</a></p>
     </div>
     {% include footer.html %}
   </body>

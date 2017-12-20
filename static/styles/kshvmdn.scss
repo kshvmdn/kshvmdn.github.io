@@ -1,135 +1,64 @@
 ---
 ---
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-size: 16px;
-}
-
-body {
-  font-family: Merriweather, Palatino;
-  font-weight: 300;
-  background-color: #fff;
-  color: #515151;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: all .4s ease;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  padding: 5rem 1rem;
-  max-width: 38rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-header {
-  padding: 5rem 0 0.75rem;
-  color: #aaa;
-  font-family: Lato;
+  width: 45em;
+  max-width: 90%;
+  margin: 1.5em auto;
+  font-family: 'Merriweather';
+  font-weight: 300;
+  text-align: justify;
 
   h1 {
-    margin-top: 0rem;
-    margin-bottom: 0.45rem;
-    letter-spacing: -.015rem;
-    font-size: 1.65rem;
-    font-weight: 300;
-    line-height: 1;
+    font-size: 1.2em;
 
-    #name {
-      color: #333;
-    }
-  }
-
-  ul {
-    padding: 0;
-
-    li {
-      list-style-type: none;
-      padding: 0 0.35rem;
-      display: inline;
-      font-size: 0.9rem;
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }
-
-      &.current,
-      a:hover {
-        color: #333;
-      }
-    }
-  }
-}
-
-section.content {
-  p {
-    line-height: 1.8;
-    margin: 0 0 1rem;
-    font-size: 0.87rem;
-  }
-
-  a {
-    color: #375eab;
-    font-weight: 400;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-section.projects {
-  div.project {
-    p.project--name {
-      margin: 0 0 0.2rem;
-
-      a.project--link {
-        font-weight: 100;
-        font-size: 0.87rem;
-        font-style: italic;
-      }
-    }
-
-    p.project--description {
-      color: #777;
-      font-size: 0.82rem;
+    i {
       font-weight: 300;
     }
   }
-}
 
-@media screen and (max-width: 636px) {
-  .container {
-    padding: 1rem;
+  h2 {
+    font-size: 1.1em;
   }
 
-  header {
-    padding: 1rem 0 0.75rem;
+  hr {
+    border: 0.5px solid rgb(128, 128, 128);
+  }
 
-    ul > li {
-      padding: 0 0.25rem;
+  p {
+    font-size: 0.85em;
+
+    a {
+      color: #663399;
+      text-decoration: none;
+      font-weight: 400;
+
+      &:hover {
+        color: #1589FF;
+        text-decoration: underline;
+      }
+
+      i {
+        font-weight: 300;
+      }
     }
   }
 
-  section.content {
+  div.projects {
+    margin: 1em auto;
+
     p {
-      line-height: 1.7;
-      margin: 0 0 0.8rem;
+      display: inline;
+
+      &:not(:last-child):after {
+        content: ', ';
+      }
     }
   }
 }
