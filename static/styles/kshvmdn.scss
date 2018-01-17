@@ -8,23 +8,18 @@ body {
 }
 
 .container {
-  width: 45em;
+  width: 27em;
   max-width: 90%;
   margin: 1.5em auto;
-  font-family: 'Merriweather';
+  font-family: 'Inconsolata';
   font-weight: 300;
-  text-align: justify;
 
   h1 {
-    font-size: 1.2em;
-
-    i {
-      font-weight: 300;
-    }
-  }
-
-  h2 {
-    font-size: 1.1em;
+    font-family: 'Hind';
+    font-size: 1.55em;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
   }
 
   hr {
@@ -32,32 +27,22 @@ body {
   }
 
   p {
-    font-size: 0.85em;
+    font-size: 1em;
+    letter-spacing: -0.25px;
 
     a {
-      color: #663399;
+      background: #eeeeee;
+      border-bottom: 1px solid white;
+      color: #2e3b43;
       text-decoration: none;
-      font-weight: 400;
 
       &:hover {
-        color: #1589FF;
-        text-decoration: underline;
+        background: transparent;
+        border-bottom:  1px solid #2e3b43;
       }
 
       i {
         font-weight: 300;
-      }
-    }
-  }
-
-  div.projects {
-    margin: 1em auto;
-
-    p {
-      display: inline;
-
-      &:not(:last-child):after {
-        content: ', ';
       }
     }
   }
