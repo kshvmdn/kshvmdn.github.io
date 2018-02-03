@@ -11,12 +11,12 @@ body {
   width: 27em;
   max-width: 90%;
   margin: 1.5em auto;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 300;
 
   h1 {
-    font-family: 'Hind';
-    font-size: 1.55em;
+    font-family: "Molengo";
+    font-size: 1.45em;
     font-weight: normal;
     text-align: center;
     margin: 0;
@@ -28,21 +28,21 @@ body {
 
   p {
     font-size: 1em;
+    line-height: 1.4em;
     letter-spacing: -0.25px;
+
+    .kshvmdn {
+      border-bottom: 0.5px dashed #2e3b43;
+    }
 
     a {
       background: #eeeeee;
-      border-bottom: 1px solid white;
       color: #2e3b43;
       text-decoration: none;
 
       &:hover {
         background: transparent;
-        border-bottom:  1px solid #2e3b43;
-      }
-
-      i {
-        font-weight: 300;
+        text-decoration: underline;
       }
     }
   }
