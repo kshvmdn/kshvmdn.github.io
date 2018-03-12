@@ -8,32 +8,27 @@ body {
 }
 
 .container {
-  width: 27em;
+  width: 25em;
   max-width: 90%;
   margin: 1.5em auto;
-  font-family: "Inconsolata";
+  font-family: "Nanum Gothic Coding";
   font-weight: 300;
 
   h1 {
     font-family: "Molengo";
-    font-size: 1.45em;
+    font-size: 1.3em;
     font-weight: normal;
-    text-align: center;
     margin: 0;
   }
 
   hr {
-    border: 0.5px solid rgb(128, 128, 128);
+    border: 1px solid #dddeee;
   }
 
   p {
-    font-size: 1em;
-    line-height: 1.4em;
-    letter-spacing: -0.25px;
-
-    .kshvmdn {
-      border-bottom: 0.5px dashed #2e3b43;
-    }
+    font-size: 0.95em;
+    line-height: 1.2em;
+    margin: 0.8em auto;
 
     a {
       background: #eeeeee;
