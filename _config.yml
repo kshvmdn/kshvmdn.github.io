@@ -1,9 +1,4 @@
 title: Kashav Madan
 email: kshvmdn@gmail.com
-description: Kashav Madan (@kshvmdn), personal website &amp; portfolio. Software developer &amp; open source enthusiast.
-exclude: [
-  '.gitignore',
-  'CNAME',
-  'LICENSE',
-  'README.md'
-]
+description: Kashav Madan – software developer based in Toronto, Canada.
+exclude: ['.gitignore', 'CNAME', 'LICENSE', 'README.md']
